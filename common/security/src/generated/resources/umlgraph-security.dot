@@ -1,0 +1,2542 @@
+
+	
+digraph G {             
+	fontsize = 10        
+	node [                          
+		fontsize = 10                
+		fontname="arial"
+		shape=plaintext
+	     ]        
+	     
+	edge [                            
+		fontsize = 10        
+	     ]        
+	
+	
+	
+		subgraph clustersecurity {
+			label = "security"  
+			
+				
+					
+	ApplicationsService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> ApplicationsService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	CategoryDetailService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetailService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	CategoryDetailsPermissionService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetailsPermissionService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	CategoryService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	DepartmentService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> DepartmentService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	ModulesService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> ModulesService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	OperationService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> OperationService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	PermissionService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> PermissionService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	RolePermissionService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> RolePermissionService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	RoleService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> RoleService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	SecurityService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> SecurityService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">addApplication</td></tr>			
+
+				<tr><td align="left">updateApplication</td></tr>			
+
+				<tr><td align="left">findApplications</td></tr>			
+
+				<tr><td align="left">findApplication</td></tr>			
+
+				<tr><td align="left">findApplicationByCode</td></tr>			
+
+				<tr><td align="left">findApplicationByName</td></tr>			
+
+				<tr><td align="left">removeApplication</td></tr>			
+
+				<tr><td align="left">removeAllApplication</td></tr>			
+
+				<tr><td align="left">addModule</td></tr>			
+
+				<tr><td align="left">addModules</td></tr>			
+
+				<tr><td align="left">updateModule</td></tr>			
+
+				<tr><td align="left">updateModules</td></tr>			
+
+				<tr><td align="left">deleteModule</td></tr>			
+
+				<tr><td align="left">deleteModules</td></tr>			
+
+				<tr><td align="left">findModule</td></tr>			
+
+				<tr><td align="left">findModule</td></tr>			
+
+				<tr><td align="left">findModuleByCode</td></tr>			
+
+				<tr><td align="left">findModuleByName</td></tr>			
+
+				<tr><td align="left">addOperation</td></tr>			
+
+				<tr><td align="left">addOperations</td></tr>			
+
+				<tr><td align="left">updateOperation</td></tr>			
+
+				<tr><td align="left">updateOperations</td></tr>			
+
+				<tr><td align="left">deleteOperation</td></tr>			
+
+				<tr><td align="left">deleteOperations</td></tr>			
+
+				<tr><td align="left">findOperation</td></tr>			
+
+				<tr><td align="left">findOperation</td></tr>			
+
+				<tr><td align="left">findOperationByCode</td></tr>			
+
+				<tr><td align="left">findOperationByName</td></tr>			
+
+				<tr><td align="left">addPermissionToOperation</td></tr>			
+
+				<tr><td align="left">deletePermissionToOperation</td></tr>			
+
+				<tr><td align="left">addPermission</td></tr>			
+
+				<tr><td align="left">modifyPermission</td></tr>			
+
+				<tr><td align="left">deletePermission</td></tr>			
+
+				<tr><td align="left">addRole</td></tr>			
+
+				<tr><td align="left">modifyRole</td></tr>			
+
+				<tr><td align="left">deleteRole</td></tr>			
+
+				<tr><td align="left">addOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">deleteOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">addOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">deleteOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">addOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">deleteOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">findAllRoles</td></tr>			
+
+				<tr><td align="left">findRole</td></tr>			
+
+				<tr><td align="left">findRoleByCode</td></tr>			
+
+				<tr><td align="left">findRoleByName</td></tr>			
+
+				<tr><td align="left">addCategory</td></tr>			
+
+				<tr><td align="left">modifyCategory</td></tr>			
+
+				<tr><td align="left">deleteCategory</td></tr>			
+
+				<tr><td align="left">addCategoryDetails</td></tr>			
+
+				<tr><td align="left">modifyCategoryDetails</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetails</td></tr>			
+
+				<tr><td align="left">addCategoryDetailsPermission</td></tr>			
+
+				<tr><td align="left">modifyCategoryDetailsPermission</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetailsPermission</td></tr>			
+
+				<tr><td align="left">addUserDelegation</td></tr>			
+
+				<tr><td align="left">modifyUserDelegation</td></tr>			
+
+				<tr><td align="left">deleteUserDelegation</td></tr>			
+
+				<tr><td align="left">createUser</td></tr>			
+
+				<tr><td align="left">modifyUser</td></tr>			
+
+				<tr><td align="left">deleteUser</td></tr>			
+
+				<tr><td align="left">addRoleToUser</td></tr>			
+
+				<tr><td align="left">deleteRoleToUser</td></tr>			
+
+				<tr><td align="left">addCategoryDetailPermissionToUser</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetailPermissionToUser</td></tr>			
+
+				<tr><td align="left">findAllUsers</td></tr>			
+
+				<tr><td align="left">findUsersByRole</td></tr>			
+
+				<tr><td align="left">findUsersByRoleCode</td></tr>			
+
+				<tr><td align="left">findUsersByRoleName</td></tr>			
+
+				<tr><td align="left">findUserByGroupId</td></tr>			
+
+				<tr><td align="left">findUserByUserId</td></tr>			
+
+				<tr><td align="left">findUser</td></tr>			
+
+				<tr><td align="left">findUserById</td></tr>			
+
+				<tr><td align="left">createDepartment</td></tr>			
+
+				<tr><td align="left">modifyDepartment</td></tr>			
+
+				<tr><td align="left">deleteDepartment</td></tr>			
+
+				<tr><td align="left">createUserGroup</td></tr>			
+
+				<tr><td align="left">modifyUserGroup</td></tr>			
+
+				<tr><td align="left">deleteUserGroup</td></tr>			
+
+				<tr><td align="left">addRoleToUserGroup</td></tr>			
+
+				<tr><td align="left">deleteRoleToUserGroup</td></tr>			
+
+				<tr><td align="left">addCategoryDetailPermissionToUserGroup</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetailPermissionToUserGroup</td></tr>			
+
+				<tr><td align="left">findAllUserGroups</td></tr>			
+
+				<tr><td align="left">findUserGroupByName</td></tr>			
+
+				<tr><td align="left">findUserGroupById</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserCategoryPermissionService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserCategoryPermissionService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserDelegationService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserDelegationService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserGroupCategoryPermissionService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupCategoryPermissionService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserGroupRoleService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupRoleService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserGroupService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserRoleService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserRoleService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+	UserService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserService </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">getUserDetails</td></tr>			
+
+				<tr><td align="left">findUser</td></tr>			
+
+				<tr><td align="left">findUserByEmail</td></tr>			
+
+				<tr><td align="left">findById</td></tr>			
+
+				<tr><td align="left">findAll</td></tr>			
+
+				<tr><td align="left">save</td></tr>			
+
+				<tr><td align="left">delete</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+					
+				
+				
+
+	Applications [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Applications </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * applicationCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * applicationName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	ApplicationsDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> ApplicationsDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + applicationCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Category [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Category </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * categoryID : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + categoryID : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDetail [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetail </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + name : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + desc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + status : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDetailDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetailDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + name : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + desc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + status : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDetailsPermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetailsPermission </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + categoryPermissionCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + createFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + modifyFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + deleteFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + viewFlag : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDetailsPermissionDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetailsPermissionDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + categoryPermissionCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + createFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + modifyFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + deleteFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + viewFlag : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Department [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Department </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * departmentCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * departmentName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + departmentDesc : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	DepartmentDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> DepartmentDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + departmentCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + departmentName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + departmentDesc : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Modules [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Modules </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * moduleCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	ModulesDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> ModulesDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + moduleCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Operation [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Operation </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * functionCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	OperationDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> OperationDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + functionCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Permission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Permission </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * permissionCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + createFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + modifyFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + deleteFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + viewFlag : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	PermissionDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> PermissionDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + permissionCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + createFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + modifyFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + deleteFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + viewFlag : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Role [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Role </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * roleCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * roleName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	RoleDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> RoleDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + roleCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	RolePermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> RolePermission </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	RolePermissionDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> RolePermissionDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	User [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> User </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * userId : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + firstName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + middleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + lastName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + password : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + passwordExpiryDate : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + dateOfBirth : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserCategoryPermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserCategoryPermission </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserCategoryPermissionDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserCategoryPermissionDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + userId : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + firstName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + middleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + lastName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + password : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + passwordExpiryDate : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + dateOfBirth : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserDelegation [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserDelegation </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * delegationStatus : boolean </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * startDate : Date </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + endDate : Date </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserDelegationDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserDelegationDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + delegationStatus : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + startDate : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + endDate : Date </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserEmail [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserEmail </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + emailType : String </td></tr>
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * emailId : String </font> </td></tr>			
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserEmailDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserEmailDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + emailType : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + emailId : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroup [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroup </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * userGroupCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * userGroupName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupCategoryPermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupCategoryPermission </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupCategoryPermissionDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupCategoryPermissionDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + userGroupCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupRole [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupRole </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupRoleDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupRoleDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserPhone [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserPhone </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + phoneType : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + phoneNumber : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserPhoneDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserPhoneDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + phoneType : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + phoneNumber : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserRole [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserRole </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserRoleDTO [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserRoleDTO </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+			
+		}
+	
+
+	
+		
+	edge [arrowhead = "empty"]
+
+		
+		
+	edge [arrowhead = "none"]
+
+		
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n modules" taillabel="application" labeldistance="2.0" labelangle="-30"]
+	
+		Applications -> Modules
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n modules" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		ApplicationsDTO -> ModulesDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Category -> CategoryDetail
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n categoryDetails" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDTO -> CategoryDetailDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n categoryDetailPermissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetail -> CategoryDetailsPermission
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="category" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailDTO -> CategoryDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n categoryDetailPermissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailDTO -> CategoryDetailsPermissionDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n userCategoryDetailPermissions" taillabel="categoryDetailPermissions" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailsPermission -> UserCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n userGroupCategoryDetailPermissions" taillabel="categoryDetailPermissions" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailsPermission -> UserGroupCategoryPermission
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="categoryDetail" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailsPermissionDTO -> CategoryDetailDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Department -> User
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n users" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		DepartmentDTO -> UserDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="module" labeldistance="2.0" labelangle="-30"]
+	
+		Modules -> Operation
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="application" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		ModulesDTO -> ApplicationsDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n operations" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		ModulesDTO -> OperationDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Operation -> Permission
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="module" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		OperationDTO -> ModulesDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n permissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		OperationDTO -> PermissionDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Permission -> RolePermission
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="operation" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		PermissionDTO -> OperationDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Role -> RolePermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Role -> UserGroupRole
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Role -> UserRole
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n rolePermissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		RoleDTO -> RolePermissionDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userGroupRoles" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		RoleDTO -> UserGroupRoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userRoles" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		RoleDTO -> UserRoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="permission" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		RolePermissionDTO -> PermissionDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="role" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		RolePermissionDTO -> RoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="reportingUser" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> User
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserDelegation
+
+			edge [arrowtail="diamond" arrowhead = "none" headlabel="0..n emails" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserEmail
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="" taillabel="0..n " labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserGroup
+
+			edge [arrowtail="diamond" arrowhead = "none" headlabel="0..n phones" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserPhone
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserRole
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="userCategoryDetailPermission" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserCategoryPermissionDTO -> CategoryDetailsPermissionDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="user" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserCategoryPermissionDTO -> UserDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="department" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> DepartmentDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userCategoryPermissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserCategoryPermissionDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="reportingUserId" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userDelegations" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserDelegationDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n emails" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserEmailDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="userGroup" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserGroupDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n phones" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserPhoneDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userRoles" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDTO -> UserRoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="delegatedUser" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDelegation -> User
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="delegatedUser" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDelegationDTO -> UserDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="user" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDelegationDTO -> UserDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="user" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserEmailDTO -> UserDTO
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroup -> UserGroupCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroup -> UserGroupRole
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="userCategoryDetailPermission" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupCategoryPermissionDTO -> CategoryDetailsPermissionDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="userGroup" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupCategoryPermissionDTO -> UserGroupDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n users" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupDTO -> UserDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userGroupCategoryPermissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupDTO -> UserGroupCategoryPermissionDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="0..n userGroupRoles" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupDTO -> UserGroupRoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="role" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupRoleDTO -> RoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="userGroup" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroupRoleDTO -> UserGroupDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="user" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserPhoneDTO -> UserDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="role" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserRoleDTO -> RoleDTO
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="user" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserRoleDTO -> UserDTO
+
+		
+			
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				SecurityService -> ApplicationsDTO
+		
+				SecurityService -> ModulesDTO
+		
+				SecurityService -> OperationDTO
+		
+				SecurityService -> PermissionDTO
+		
+				SecurityService -> RoleDTO
+		
+				SecurityService -> Permission
+		
+				SecurityService -> CategoryDTO
+		
+				SecurityService -> CategoryDetailDTO
+		
+				SecurityService -> CategoryDetailsPermissionDTO
+		
+				SecurityService -> UserDelegationDTO
+		
+				SecurityService -> UserDTO
+		
+				SecurityService -> DepartmentDTO
+		
+				SecurityService -> UserGroupDTO
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserService -> User
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				ApplicationsService -> Applications
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				ModulesService -> Modules
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				OperationService -> Operation
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				PermissionService -> Permission
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				RoleService -> Role
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				RolePermissionService -> RolePermission
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserRoleService -> UserRole
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				DepartmentService -> Department
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserGroupService -> UserGroup
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserGroupRoleService -> UserGroupRole
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserDelegationService -> UserDelegation
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				CategoryService -> Category
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				CategoryDetailService -> CategoryDetail
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				CategoryDetailsPermissionService -> CategoryDetailsPermission
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserCategoryPermissionService -> UserCategoryPermission
+		
+	
+
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+				UserGroupCategoryPermissionService -> UserGroupCategoryPermission
+		
+	
+
+	
+
+		
+	
+	
+	}
+	

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datasources> 
+  <local-tx-datasource> 
+    <jndi-name>jdbc/EmailTemplateAppDS</jndi-name>  
+    <connection-url>jdbc:mysql://localhost/emailtemplateapp?autoReconnect=true</connection-url>  
+    <driver-class>com.mysql.jdbc.Driver</driver-class>  
+    <user-name>root</user-name>  
+    <password/> 
+  </local-tx-datasource> 
+</datasources>

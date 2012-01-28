@@ -1,0 +1,344 @@
+
+	
+digraph G {             
+	fontsize = 10        
+	node [                          
+		fontsize = 10                
+		fontname="arial"
+		shape=plaintext
+	     ]        
+	     
+	edge [                            
+		fontsize = 10        
+	     ]        
+	
+	
+	
+		subgraph clusterirepapplication {
+			label = "irepapplication"  
+			
+				
+					
+	SecurityManager [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> SecurityManager </font></td></tr>
+	</table></td></tr>
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+				<tr><td align="left">addApplication</td></tr>			
+
+				<tr><td align="left">updateApplication</td></tr>			
+
+				<tr><td align="left">findApplications</td></tr>			
+
+				<tr><td align="left">findApplication</td></tr>			
+
+				<tr><td align="left">findApplicationByCode</td></tr>			
+
+				<tr><td align="left">findApplicationByName</td></tr>			
+
+				<tr><td align="left">removeApplication</td></tr>			
+
+				<tr><td align="left">removeAllApplication</td></tr>			
+
+				<tr><td align="left">addModule</td></tr>			
+
+				<tr><td align="left">addModules</td></tr>			
+
+				<tr><td align="left">updateModule</td></tr>			
+
+				<tr><td align="left">updateModules</td></tr>			
+
+				<tr><td align="left">deleteModule</td></tr>			
+
+				<tr><td align="left">deleteModules</td></tr>			
+
+				<tr><td align="left">findModule</td></tr>			
+
+				<tr><td align="left">findModule</td></tr>			
+
+				<tr><td align="left">findModuleByCode</td></tr>			
+
+				<tr><td align="left">findModuleByName</td></tr>			
+
+				<tr><td align="left">addOperation</td></tr>			
+
+				<tr><td align="left">addOperations</td></tr>			
+
+				<tr><td align="left">updateOperation</td></tr>			
+
+				<tr><td align="left">updateOperations</td></tr>			
+
+				<tr><td align="left">deleteOperation</td></tr>			
+
+				<tr><td align="left">deleteOperations</td></tr>			
+
+				<tr><td align="left">findOperation</td></tr>			
+
+				<tr><td align="left">findOperation</td></tr>			
+
+				<tr><td align="left">findOperationByCode</td></tr>			
+
+				<tr><td align="left">findOperationByName</td></tr>			
+
+				<tr><td align="left">addPermissionToOperation</td></tr>			
+
+				<tr><td align="left">deletePermissionToOperation</td></tr>			
+
+				<tr><td align="left">addPermission</td></tr>			
+
+				<tr><td align="left">modifyPermission</td></tr>			
+
+				<tr><td align="left">deletePermission</td></tr>			
+
+				<tr><td align="left">addRole</td></tr>			
+
+				<tr><td align="left">modifyRole</td></tr>			
+
+				<tr><td align="left">deleteRole</td></tr>			
+
+				<tr><td align="left">addOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">deleteOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">addOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">deleteOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">addOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">deleteOperationPermissionToRole</td></tr>			
+
+				<tr><td align="left">findAllRoles</td></tr>			
+
+				<tr><td align="left">findRole</td></tr>			
+
+				<tr><td align="left">findRoleByCode</td></tr>			
+
+				<tr><td align="left">findRoleByName</td></tr>			
+
+				<tr><td align="left">addCategory</td></tr>			
+
+				<tr><td align="left">modifyCategory</td></tr>			
+
+				<tr><td align="left">deleteCategory</td></tr>			
+
+				<tr><td align="left">addCategoryDetails</td></tr>			
+
+				<tr><td align="left">modifyCategoryDetails</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetails</td></tr>			
+
+				<tr><td align="left">addCategoryDetailsPermission</td></tr>			
+
+				<tr><td align="left">modifyCategoryDetailsPermission</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetailsPermission</td></tr>			
+
+				<tr><td align="left">addUserDelegation</td></tr>			
+
+				<tr><td align="left">modifyUserDelegation</td></tr>			
+
+				<tr><td align="left">deleteUserDelegation</td></tr>			
+
+				<tr><td align="left">createUser</td></tr>			
+
+				<tr><td align="left">modifyUser</td></tr>			
+
+				<tr><td align="left">deleteUser</td></tr>			
+
+				<tr><td align="left">addRoleToUser</td></tr>			
+
+				<tr><td align="left">deleteRoleToUser</td></tr>			
+
+				<tr><td align="left">addCategoryDetailPermissionToUser</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetailPermissionToUser</td></tr>			
+
+				<tr><td align="left">findAllUsers</td></tr>			
+
+				<tr><td align="left">findUsersByRole</td></tr>			
+
+				<tr><td align="left">findUsersByRoleCode</td></tr>			
+
+				<tr><td align="left">findUsersByRoleName</td></tr>			
+
+				<tr><td align="left">findUserByGroupId</td></tr>			
+
+				<tr><td align="left">findUserByUserId</td></tr>			
+
+				<tr><td align="left">findUser</td></tr>			
+
+				<tr><td align="left">findUserById</td></tr>			
+
+				<tr><td align="left">createDepartment</td></tr>			
+
+				<tr><td align="left">modifyDepartment</td></tr>			
+
+				<tr><td align="left">deleteDepartment</td></tr>			
+
+				<tr><td align="left">createUserGroup</td></tr>			
+
+				<tr><td align="left">modifyUserGroup</td></tr>			
+
+				<tr><td align="left">deleteUserGroup</td></tr>			
+
+				<tr><td align="left">addRoleToUserGroup</td></tr>			
+
+				<tr><td align="left">deleteRoleToUserGroup</td></tr>			
+
+				<tr><td align="left">addCategoryDetailPermissionToUserGroup</td></tr>			
+
+				<tr><td align="left">deleteCategoryDetailPermissionToUserGroup</td></tr>			
+
+				<tr><td align="left">findAllUserGroups</td></tr>			
+
+				<tr><td align="left">findUserGroupByName</td></tr>			
+
+				<tr><td align="left">findUserGroupById</td></tr>			
+
+			</table>		
+		</td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+					
+				
+				
+			
+		}
+	
+
+	
+		
+	edge [arrowhead = "empty"]
+
+		
+		
+	edge [arrowhead = "none"]
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		
+	
+	
+	}
+	

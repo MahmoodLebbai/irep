@@ -1,0 +1,82 @@
+
+	
+digraph G {             
+	fontsize = 10        
+	node [                          
+		fontsize = 10                
+		fontname="arial"
+		shape=plaintext
+	     ]        
+	     
+	edge [                            
+		fontsize = 10        
+	     ]        
+	
+	
+	
+		subgraph clusteremailtemplate {
+			label = "emailtemplate"  
+			
+				
+				
+
+	EmailTemplate [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> EmailTemplate </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + ftlFilePath : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + status : Boolean </td></tr>
+			
+		
+		
+
+		
+		 
+			<tr><td align="left"><font face="arialbd"> * emailTemplateKey : EmailTemplateKey </font> </td></tr>			
+		
+
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+
+			
+		}
+	
+
+	
+		
+	edge [arrowhead = "empty"]
+
+		
+		
+	edge [arrowhead = "none"]
+
+		
+		
+	
+	
+	}
+	

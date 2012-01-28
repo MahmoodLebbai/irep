@@ -1,0 +1,2619 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<style type="text/css" media="screen,print">   
+    	@import url("DomainModelDoc.css");
+  	</style> 
+	<title>Summary Documation of irepapplication module(IrepApplication)</title> 
+</head>
+<body>
+
+	<div id="wrap">
+  	<a name="module_irepapplication"></a>
+	<h1>Summary Documation of irepapplication module <a href="DomainModelDoc.html">(IrepApplication)</a></h1>
+	
+	
+	
+	<p></p>
+	
+	<div id="menu">
+			
+			<ul>
+			
+				<li><a href="DomainModelDoc-irepapplication.html#SecurityManager">SecurityManager</a></li>
+
+			</ul>
+
+	</div>
+
+	
+		
+	<div id="module_graph">
+	    <hr/>
+	    <p><b>All in irepapplication</b></p>
+		<a href="umlgraph-irepapplication.dot.png">
+		<img src="umlgraph-irepapplication.dot.png" />
+		</a>
+		<hr/>
+		<p><b>Persistent Domain in irepapplication</b></p>
+		<a href="umlgraph-irepapplication-entity.dot.png">
+		<img src="umlgraph-irepapplication-entity.dot.png" />
+		</a>
+	</div>
+
+	
+	
+	<div id="services">
+	<hr/>
+	
+	<a name="SecurityManager"></a>
+	<h3>SecurityManager</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>addApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ application</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategory</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ category</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetailPermissionToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetailPermissionToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;
+	
+ categoryDetail</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetailsPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addModules</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ roleId</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperations</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ permission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addPermissionToOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ operation</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addRoleToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addRoleToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addUserDelegation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ userDelegation</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>createDepartment</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ department</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>createUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>createUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategory</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ category</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetailPermissionToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetailPermissionToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;
+	
+ categoryDetail</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetailsPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteDepartment</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ department</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteModules</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ roleId</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperations</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deletePermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ permission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deletePermissionToOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ operation</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteRoleToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteRoleToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteUserDelegation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ userDelegation</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findAllRoles</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findAllUserGroups</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findAllUsers</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ applicationId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplicationByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ applicationCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplicationByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ applicationName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplications</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ applicationId</li>
+
+	<li>
+	
+		Long
+	
+ moduleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ moduleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModuleByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ moduleCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModuleByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ moduleName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ applicationId</li>
+
+	<li>
+	
+		Long
+	
+ moduleId</li>
+
+	<li>
+	
+		Long
+	
+ operationId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ operationId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperationByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ operationCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperationByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ operationName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ roleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findRoleByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findRoleByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userId</li>
+
+	<li>
+	
+		String
+	
+ password</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserByGroupId</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ userGroupId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ userId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserByUserId</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserGroupById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ userGroupId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserGroupByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userGroupName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUsersByRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ roleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUsersByRoleCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUsersByRoleName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyCategory</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ category</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyCategoryDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;
+	
+ categoryDetail</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyCategoryDetailsPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyDepartment</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ department</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ permission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyUserDelegation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ userDelegation</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>removeAllApplication</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>removeApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ applicationDTO</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ application</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateModules</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateOperations</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	</div>
+	<div id="consumers">
+	
+	</div>
+	<div id="domainObjects">
+	
+	</div>
+
+
+	</div>
+</body>
+</html>	
+

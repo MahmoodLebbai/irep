@@ -1,0 +1,584 @@
+import 'classpath:/crypto.btdesign'
+
+ApplicationPart SecurityPart {
+	
+	Module security {
+		  basePackage=com.fos.common.security
+		  
+		   Service SecurityService {
+		   	
+		   	
+		   	 /* Application Service Methods */
+		   	 @ApplicationsDTO addApplication(@ApplicationsDTO application) throws SecurityException;
+		   	 @ApplicationsDTO updateApplication(@ApplicationsDTO application) throws SecurityException;
+		   	 List<@ApplicationsDTO> findApplications() throws SecurityException;
+		   	 @ApplicationsDTO findApplication(Long applicationId) throws SecurityException;
+		   	 @ApplicationsDTO findApplicationByCode(String applicationCode) throws SecurityException;
+		   	 @ApplicationsDTO findApplicationByName(String applicationName) throws SecurityException;
+		   	 void removeApplication(@ApplicationsDTO applicationDTO) throws SecurityException;
+		   	 void removeAllApplication() throws SecurityException;
+		   	 
+		   	 /* Modules  Service Methods */
+		   	 @ApplicationsDTO addModule(@ModulesDTO module) throws SecurityException;
+		   	 @ApplicationsDTO addModules(List<@ModulesDTO> modules) throws SecurityException;
+		   	 @ApplicationsDTO updateModule(@ModulesDTO module) throws SecurityException;
+		   	 @ApplicationsDTO updateModules(List<@ModulesDTO> modules) throws SecurityException;
+		  	 void deleteModule(@ModulesDTO module) throws SecurityException;
+		   	 void deleteModules(List<@ModulesDTO> modules) throws SecurityException;
+		     @ModulesDTO findModule(Long applicationId , Long moduleId) throws SecurityException;
+		     @ModulesDTO findModule(Long moduleId) throws SecurityException;
+		   	 @ModulesDTO findModuleByCode(String moduleCode) throws SecurityException;
+		   	 @ModulesDTO findModuleByName(String moduleName) throws SecurityException;
+		   	 		   	 
+		   	 /* Operation */
+		   	 @ApplicationsDTO addOperation(@OperationDTO module) throws SecurityException;
+		   	 @ApplicationsDTO addOperations(List<@OperationDTO> modules) throws SecurityException;
+		   	 @ApplicationsDTO updateOperation(@OperationDTO module) throws SecurityException;
+		   	 @ApplicationsDTO updateOperations(List<@OperationDTO> modules) throws SecurityException;
+		  	 void deleteOperation(@OperationDTO module) throws SecurityException;
+		   	 void deleteOperations(List<@OperationDTO> modules) throws SecurityException;
+		     @OperationDTO findOperation(Long applicationId , Long moduleId , Long operationId) throws SecurityException;
+		     @OperationDTO findOperation(Long operationId) throws SecurityException;
+		   	 @OperationDTO findOperationByCode(String operationCode) throws SecurityException;
+		   	 @OperationDTO findOperationByName(String operationName) throws SecurityException;
+		   	 @OperationDTO addPermissionToOperation(@OperationDTO operation , List<@PermissionDTO> permissions ) throws SecurityException;
+		     void deletePermissionToOperation(@OperationDTO operation , List<@PermissionDTO> permissions ) throws SecurityException;
+		   	 
+		   	 
+		   	 
+		   	 /* Permission */
+		   	 @PermissionDTO addPermission(@PermissionDTO permission) throws SecurityException;
+		   	 @PermissionDTO modifyPermission(@PermissionDTO permission) throws SecurityException;
+		   	 void deletePermission(@PermissionDTO permission) throws SecurityException;
+		   	 
+		   	 
+		   	 /* Role */
+		   	 @RoleDTO addRole(@RoleDTO role) throws SecurityException;
+		   	 @RoleDTO modifyRole(@RoleDTO role) throws SecurityException;
+		   	 void deleteRole(@RoleDTO role) throws SecurityException;
+		   	 @RoleDTO addOperationPermissionToRole(@RoleDTO role , List<@Permission> permissions) throws SecurityException;
+		   	 @RoleDTO deleteOperationPermissionToRole(@RoleDTO role , List<@Permission> permissions) throws SecurityException;
+		   	 @RoleDTO addOperationPermissionToRole(Long roleId , List<@Permission> permissions) throws SecurityException;
+		   	 @RoleDTO deleteOperationPermissionToRole(Long roleId , List<@Permission> permissions) throws SecurityException;
+		   	 @RoleDTO addOperationPermissionToRole(String roleCode , List<@Permission> permissions) throws SecurityException;
+		   	 @RoleDTO deleteOperationPermissionToRole(String roleCode , List<@Permission> permissions) throws SecurityException;
+		   	 List<@RoleDTO> findAllRoles() throws SecurityException;
+		   	 @RoleDTO findRole(long roleId) throws SecurityException;
+		   	 @RoleDTO findRoleByCode(String roleCode) throws SecurityException;
+		     @RoleDTO findRoleByName(String roleName) throws SecurityException;
+		     
+		   	
+		   	 /* Category */
+		   	 @CategoryDTO addCategory(@CategoryDTO category) throws SecurityException;
+		   	 @CategoryDTO modifyCategory(@CategoryDTO category) throws SecurityException;
+		   	 void deleteCategory(@CategoryDTO category) throws SecurityException;
+		   	 @CategoryDTO addCategoryDetails(List<@CategoryDetailDTO> categoryDetail) throws SecurityException;
+		   	 @CategoryDTO modifyCategoryDetails(List<@CategoryDetailDTO> categoryDetail) throws SecurityException;
+		   	 @CategoryDTO deleteCategoryDetails(List<@CategoryDetailDTO> categoryDetail) throws SecurityException;
+		   	 
+		  	 /* CategoryDetail Permission */
+		   	 @CategoryDetailDTO addCategoryDetailsPermission(List<@CategoryDetailsPermissionDTO> categoryDetailPermissions) throws SecurityException;
+		   	 @CategoryDetailDTO modifyCategoryDetailsPermission(List<@CategoryDetailsPermissionDTO> categoryDetailPermissions) throws SecurityException;
+		   	 void deleteCategoryDetailsPermission(List<@CategoryDetailsPermissionDTO> categoryDetailPermissions) throws SecurityException;
+		   	 
+		   	 
+		     /* UserDelegarion Permission */
+		   	 @UserDelegationDTO addUserDelegation(@UserDelegationDTO userDelegation) throws SecurityException;
+		   	 @UserDelegationDTO modifyUserDelegation(@UserDelegationDTO userDelegation) throws SecurityException;
+		   	 void deleteUserDelegation(@UserDelegationDTO userDelegation) throws SecurityException;
+		   	
+		   	
+		   	 
+		   	 
+		   	 /* User Service */
+		   	 @UserDTO createUser(@UserDTO user) throws SecurityException;
+		   	 @UserDTO modifyUser(@UserDTO user) throws SecurityException;
+		   	 void deleteUser(@UserDTO user) throws SecurityException;
+		   	 @UserDTO addRoleToUser(@UserDTO user , List<@RoleDTO> roles) throws SecurityException;
+		   	 @UserDTO deleteRoleToUser(@UserDTO user , List<@RoleDTO> roles) throws SecurityException;
+		   	 @UserDTO addCategoryDetailPermissionToUser(@UserDTO user , List<@CategoryDetailsPermissionDTO> categoryDetailPermission) throws SecurityException;
+		   	 @UserDTO deleteCategoryDetailPermissionToUser(@UserDTO user , List<@CategoryDetailsPermissionDTO> categoryDetailPermission) throws SecurityException;
+		   	 List<@UserDTO> findAllUsers() throws SecurityException;
+		   	 List<@UserDTO> findUsersByRole(long roleId) throws SecurityException;
+		   	 List<@UserDTO> findUsersByRoleCode(String roleCode) throws SecurityException;
+		   	 List<@UserDTO> findUsersByRoleName(String roleName) throws SecurityException;
+		   	 List<@UserDTO> findUserByGroupId(long userGroupId) throws SecurityException; 
+		   	 @UserDTO findUserByUserId(String userId) throws SecurityException; 
+		   	 @UserDTO findUser(String userId , String password) throws SecurityException;
+		   	 @UserDTO findUserById(long userId ) throws SecurityException;
+		   	 
+		   	 
+		   	 
+		   	 /* Department */
+		   	 @DepartmentDTO createDepartment(@DepartmentDTO department) throws SecurityException;
+		   	 @DepartmentDTO modifyDepartment(@DepartmentDTO department) throws SecurityException;
+		   	 void deleteDepartment(@DepartmentDTO department) throws SecurityException;
+		   	 
+		   	 
+		   	 /* UserGroup Service */
+			 @UserGroupDTO createUserGroup(@UserGroupDTO userGroup) throws SecurityException;
+			 @UserGroupDTO modifyUserGroup(@UserGroupDTO userGroup) throws SecurityException;
+		     void deleteUserGroup(@UserGroupDTO userGroup) throws SecurityException;
+		   	 @UserGroupDTO addRoleToUserGroup(@UserGroupDTO userGroup , List<@RoleDTO> roles) throws SecurityException;
+		   	 @UserGroupDTO deleteRoleToUserGroup(@UserGroupDTO userGroup , List<@RoleDTO> roles) throws SecurityException;
+		   	 @UserGroupDTO addCategoryDetailPermissionToUserGroup(@UserGroupDTO user , List<@CategoryDetailsPermissionDTO> categoryDetailPermission) throws SecurityException;
+		   	 @UserGroupDTO deleteCategoryDetailPermissionToUserGroup(@UserGroupDTO user , List<@CategoryDetailsPermissionDTO> categoryDetailPermission) throws SecurityException;
+		   	 List<@UserGroupDTO> findAllUserGroups() throws SecurityException;
+		   	 @UserGroupDTO findUserGroupByName(String userGroupName) throws SecurityException; 
+		   	 @UserGroupDTO findUserGroupById(long userGroupId) throws SecurityException;
+		   
+		   	 
+		   }
+       	   
+       	
+       	  /* Application Table */
+		  Entity Applications {
+			databaseTable = "APPLICATION"
+			scaffold
+			String applicationCode key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR";
+			String applicationName key databaseColumn = "NAME" length = "50" databaseType = "VARCHAR";
+			String applicationDesc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR" nullable;
+			boolean applicationStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			reference List<Modules> modules opposite application
+			
+			Repository ApplicationsRepository {
+				@Applications findApplicationByName(String applicationName) throws SecurityException;
+				@Applications findApplicationByCode(String applicationCode) throws SecurityException;
+				
+			}
+		 }
+		 
+		 /* Application Table */
+		  DataTransferObject ApplicationsDTO {
+			Long id
+			String applicationCode
+			String applicationName
+			String applicationDesc
+			boolean applicationStatus
+			reference List<@ModulesDTO> modules
+		 }
+		 
+		
+		/* Module */
+		Entity Modules {
+			databaseTable = "MODULE"
+			scaffold
+			String moduleCode key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR";
+			String moduleName databaseColumn = "NAME" length = "50" databaseType = "VARCHAR";
+			String moduleDesc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR" nullable;
+			boolean moduleStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			reference @Applications application databaseColumn = "APP_ID" opposite modules
+		    reference List<Operation> operations opposite module
+		    
+		   
+		}
+		
+		 /* Module */
+		DataTransferObject ModulesDTO {
+			Long id
+			String moduleCode
+			String moduleName
+			String moduleDesc
+			boolean moduleStatus
+			reference @ApplicationsDTO application
+		    reference List<@OperationDTO> operations    
+		}
+		
+		
+		/* Operation */
+		Entity Operation {
+			databaseTable = "OPERATION"
+			scaffold
+			hint = "Functionality or Feature available in the System."
+			String functionCode key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR";
+			String functionName databaseColumn = "NAME" length = "50" databaseType = "VARCHAR";
+			String functionDesc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR" nullable;
+			boolean functionStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			reference @Modules module databaseColumn = "MODULE_ID" opposite operations;
+			reference List<Permission> permissions opposite operation
+			
+		}
+		
+		/* Operation */
+		DataTransferObject OperationDTO {
+			Long id
+			String functionCode
+			String functionName
+			String functionDesc
+			boolean functionStatus
+			reference @ModulesDTO module
+			reference List<@PermissionDTO> permissions
+			
+		}
+		
+		
+		/* Permission */
+		Entity Permission {
+			scaffold
+			databaseTable = "PERMISSION"
+			String permissionCode key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR";
+			boolean createFlag databaseColumn = "CREATE_FLAG" databaseType = "BOOLEAN";
+			boolean modifyFlag databaseColumn = "MODIFY_FLAG" databaseType = "BOOLEAN";
+			boolean deleteFlag databaseColumn = "DELETE_FLAG" databaseType = "BOOLEAN";
+			boolean viewFlag   databaseColumn = "VIEW_FLAG" databaseType = "BOOLEAN";
+			reference @Operation operation key databaseColumn = "OPERATION" opposite permissions;
+			reference List<@RolePermission> rolePermissions  opposite permission;
+		}
+		
+		
+		DataTransferObject PermissionDTO {
+			Long id
+			String permissionCode
+			boolean createFlag
+			boolean modifyFlag
+			boolean deleteFlag
+			boolean viewFlag
+			reference @OperationDTO operation
+		}
+					
+		/* Role */
+		Entity Role {
+			databaseTable = "ROLE"
+			scaffold
+			hint = "Roles enable the user to tell what can do and cannot do in the system."
+			String roleCode key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR"
+			String roleName key databaseColumn = "NAME" length = "50" databaseType = "VARCHAR"
+			String roleDesc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR" nullable;
+			boolean roleStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN"
+		    reference List<@RolePermission> rolePermissions opposite role
+		    reference List<@UserRole> userRoles opposite role;
+		    reference List<@UserGroupRole> userGroupRoles opposite role;	
+		}
+		
+		DataTransferObject RoleDTO {
+			Long id
+			String roleCode
+			String roleName
+			String roleDesc
+			boolean roleStatus
+		    reference List<@RolePermissionDTO> rolePermissions
+		    reference List<@UserRoleDTO> userRoles
+		    reference List<@UserGroupRoleDTO> userGroupRoles
+	    }
+		
+		/* Role Permission */
+		Entity RolePermission {
+			databaseTable = "ROLE_PERMISSION"
+			scaffold
+			reference @Role role key databaseColumn = "ROLE_ID" opposite rolePermissions;
+			reference @Permission permission key databaseColumn = "PERMISSION_ID" opposite rolePermissions;
+		}
+		
+		DataTransferObject RolePermissionDTO {
+			Long id
+			reference @RoleDTO role
+			reference @PermissionDTO permission
+		}
+		
+		
+		
+		
+		/* User Role */
+		Entity UserRole {
+			databaseTable = "USER_ROLE"
+			scaffold
+			reference @Role role key databaseColumn = "ROLE_ID" opposite userRoles;
+			reference @User user key databaseColumn = "USER_ID" opposite userRoles;
+			
+		}
+		
+		DataTransferObject UserRoleDTO {
+			Long id
+			reference @RoleDTO role
+			reference @UserDTO user			
+		}
+		
+		/* Department  */
+		Entity Department {
+			databaseTable = "DEPARTMENT"
+			scaffold
+			String departmentCode key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR"
+			String departmentName key databaseColumn = "NAME" length = "50" databaseType = "VARCHAR"
+			String departmentDesc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR" nullable
+			reference List<@User> users opposite department
+			
+		}
+		DataTransferObject DepartmentDTO {
+			Long id
+			String departmentCode
+			String departmentName
+			String departmentDesc
+			reference List<@UserDTO> users		
+		}
+		
+		
+		/* User */
+		Entity User {
+			databaseTable = "USER"
+			scaffold
+			String userId key databaseColumn = "USER_ID" databaseType = "VARCHAR" length = "100"
+			
+			String firstName databaseColumn = "FIRST_NAME" databaseType = "VARCHAR" length = "100"
+			String middleName databaseColumn = "MIDDLE_NAME" databaseType = "VARCHAR" length = "100" nullable
+			String lastName databaseColumn = "LAST_NAME" databaseType = "VARCHAR" length = "100" nullable
+			String password databaseColumn = "PASSWORD" databaseType = "VARCHAR" length = "50";
+			Date passwordExpiryDate databaseColumn = "PASSWORD_EXPIRY_DATE" databaseType = "TIMESTAMP"
+			reference @Department  department databaseColumn = "DEPARTMENT" opposite users 
+			reference @User reportingUser databaseColumn = "REPORTING_USER" nullable
+			Date dateOfBirth databaseColumn = "DOB" databaseType = "DATE" 
+			boolean userStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			reference @UserGroup userGroup opposite  users cascade="save-update";
+			reference List<UserEmail> emails opposite user cascade="save-update,all,delete-orphan";
+			reference List<UserPhone> phones opposite user cascade="save-update,all,delete-orphan";
+			reference List<UserRole> userRoles opposite user cascade="save-update,all,delete-orphan";
+			reference List<UserCategoryPermission> userCategoryPermissions opposite user cascade="save-update,all,delete-orphan";
+			reference List<UserDelegation> userDelegations opposite user cascade="save-update,all,delete-orphan";
+			
+			Repository UserRepository {
+					@User getUserDetails(String userId , String password) condition="userId = :userId and password = :password";
+					//@User getUserDetails(String userId , String password) query="User.FIND_USER_BY_USERID_PASSWORD";
+					@User findUser(String userId ) condition="userId = :userId";
+					@User findUserByEmail(String emailId) query="select user from User user inner join user.emails email where user.userId = email.user.userId and email.emailId = :emailId";
+			}
+		
+		 }
+		 
+		 DataTransferObject UserDTO {
+		 	Long id
+			String userId
+			String firstName
+			String middleName
+			String lastName
+			String password
+			Date passwordExpiryDate
+			reference @DepartmentDTO  department
+			reference @UserDTO reportingUserId
+			Date dateOfBirth
+			boolean userStatus
+			reference @UserGroupDTO userGroup
+			reference List<@UserEmailDTO> emails
+			reference List<@UserPhoneDTO> phones
+			reference List<@UserRoleDTO> userRoles
+			reference List<@UserCategoryPermissionDTO> userCategoryPermissions
+			reference List<@UserDelegationDTO> userDelegations
+			
+		 }
+		 
+		 
+		 Service UserService {
+		 	  getUserDetails delegates to UserRepository.getUserDetails;
+		 	  findUser delegates to UserRepository.findUser;
+		      findUserByEmail delegates to UserRepository.findUserByEmail;
+		 	  
+		 }
+		
+		/* User Group */
+		Entity UserGroup {
+			databaseTable = "USERGROUP"
+			scaffold
+		    String userGroupCode key databaseColumn = "CODE" length = "10" databaseType = "VARCHAR";
+			String userGroupName key databaseColumn = "USERGROUP_NAME" length = "100" databaseType = "VARCHAR";
+			String userGroupDesc databaseColumn = "USERGROUP_DESC" length = "100" databaseType = "VARCHAR" nullable; 
+			boolean userGroupStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			reference List<User> users opposite userGroup ;
+			reference List<UserGroupRole> userGroupRoles opposite userGroup;
+			reference List<UserGroupCategoryPermission> userGroupCategoryPermissions opposite userGroup;
+			
+			Repository UserGroupRepository {
+				@UserGroup findUserGroupByName(String userGroupName) throws SecurityException;
+				@UserGroup findUserGroupByCode(String userGroupCode) throws SecurityException;
+			}
+		}
+		
+		DataTransferObject UserGroupDTO {
+			Long id
+			String userGroupCode
+			String userGroupName
+			String userGroupDesc
+			boolean userGroupStatus
+		    reference List<@UserDTO> users
+		    reference List<@UserGroupRoleDTO> userGroupRoles
+		    reference List<@UserGroupCategoryPermissionDTO> userGroupCategoryPermissions
+		}
+		
+		
+		/* User Group Role */
+		Entity UserGroupRole {
+			databaseTable = "USERGROUP_ROLE"
+			scaffold
+			Long id
+			-@UserGroup userGroup key databaseColumn = "USER_GROUP_ID" opposite userGroupRoles;
+			-@Role role key databaseColumn = "ROLE_ID" opposite userGroupRoles;
+			
+		}
+		
+		DataTransferObject UserGroupRoleDTO {
+		    reference @UserGroupDTO userGroup
+		    reference @RoleDTO role
+			
+		}
+		
+		/* User Delegation */
+		Entity UserDelegation {
+			databaseTable = "USERDELEGATION"
+			scaffold
+			Long id
+			-@User user key databaseColumn = "USER_ID"   opposite userDelegations
+			-@User delegatedUser key databaseColumn = "USER_DELEGATION_ID"
+			boolean delegationStatus key databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			Date startDate key databaseColumn = "START_DATE"  databaseType = "TIMESTAMP";
+			Date endDate databaseColumn = "END_DATE" databaseType = "TIMESTAMP"  
+		}
+		
+		DataTransferObject UserDelegationDTO {
+			reference @UserDTO user
+			reference @UserDTO delegatedUser
+			Long id
+			boolean delegationStatus
+			Date startDate
+			Date endDate
+		}
+		
+		
+		
+		
+		
+		Entity UserEmail {
+            !aggregateRoot
+            databaseTable = "USEREMAIL"
+           
+			String emailType databaseColumn = "EMAIL_TYPE" databaseType = "VARCHAR" length = "10" 
+			String emailId key databaseColumn = "EMAIL_ID" databaseType = "VARCHAR" length = "50"
+			reference User user databaseColumn = "USER_ID" opposite emails
+		}
+		
+		DataTransferObject UserEmailDTO {
+			Long id
+			String emailType
+			String emailId
+		    reference @UserDTO user
+		}
+		
+		Entity UserPhone {
+            !aggregateRoot
+             databaseTable = "USERPHONE"
+             
+			String phoneType databaseColumn = "PHONE_TYPE" databaseType = "VARCHAR" length = "10" 
+			String phoneNumber databaseColumn = "PHONE_NUMBER" databaseType = "VARCHAR" length = "15"
+			reference User user databaseColumn = "USER_ID" opposite phones
+		}
+		
+		
+		
+		DataTransferObject UserPhoneDTO {
+         	Long id
+			String phoneType
+			String phoneNumber
+		    reference @UserDTO user
+		}
+		
+		
+		
+		Entity Category {
+			databaseTable = "CATEGORY"
+			scaffold
+			String categoryID key databaseColumn = "CODE" length = "20" databaseType = "VARCHAR";
+			String categoryName databaseColumn = "NAME" length = "50" databaseType = "VARCHAR";
+			String categoryDesc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR";
+			boolean categoryStatus databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			reference List<CategoryDetail> categoryDetails opposite category; 
+		}
+		
+		DataTransferObject CategoryDTO {
+			Long id
+			String categoryID
+			String categoryName
+			String categoryDesc
+			boolean categoryStatus
+		    reference List<@CategoryDetailDTO> categoryDetails
+		}
+		
+		Entity CategoryDetail {
+			scaffold
+			databaseTable = "CATEGORYDETAIL"
+			String name databaseColumn = "NAME" length = "50" databaseType = "VARCHAR";
+			String desc databaseColumn = "DESC" length = "100" databaseType = "VARCHAR";
+			boolean status databaseColumn = "ACTIVE" databaseType = "BOOLEAN";
+			-@Category category key databaseColumn = "CATEGORY" opposite  categoryDetails
+			reference List<CategoryDetailsPermission> categoryDetailPermissions opposite categoryDetail
+		}
+		
+		
+		DataTransferObject CategoryDetailDTO {
+			Long id
+			String name
+			String desc
+			boolean status
+			reference @CategoryDTO category
+			reference List<@CategoryDetailsPermissionDTO> categoryDetailPermissions
+		}
+		
+		Entity CategoryDetailsPermission {
+			databaseTable = "CATEGORYDETAIL_PERMISSION"
+			scaffold
+			
+			String categoryPermissionCode databaseColumn = "CATEGORY_PERMISSION_CODE" databaseType = "VARCHAR" length = "20"
+			boolean createFlag databaseColumn = "CREATE_FLAG" databaseType = "BOOLEAN"
+			boolean modifyFlag databaseColumn = "MODIFY_FLAG" databaseType = "BOOLEAN"
+			boolean deleteFlag databaseColumn = "DELETE_FLAG" databaseType = "BOOLEAN"
+			boolean viewFlag databaseColumn = "VIEW_FLAG" databaseType = "BOOLEAN"
+			reference CategoryDetail categoryDetail databaseColumn="CATEGORY_DETAIL" opposite categoryDetailPermissions
+			reference List<@UserCategoryPermission> userCategoryDetailPermissions opposite categoryDetailPermissions
+			reference List<@UserGroupCategoryPermission> userGroupCategoryDetailPermissions opposite categoryDetailPermissions
+		}
+		
+		
+		DataTransferObject CategoryDetailsPermissionDTO {
+			Long id
+			String categoryPermissionCode
+			boolean createFlag
+			boolean modifyFlag
+			boolean deleteFlag
+			boolean viewFlag
+			reference @CategoryDetailDTO categoryDetail
+		}
+		
+		
+		Entity UserCategoryPermission {
+			databaseTable = "USER_CATEGORY"
+			scaffold
+			
+			reference @User user key databaseColumn = "USER_ID" opposite userCategoryPermissions
+			reference @CategoryDetailsPermission categoryDetailPermissions key databaseColumn = "CATEGORYDETAIL_PERMISSION_ID" opposite userCategoryDetailPermissions
+		
+		}
+		
+		DataTransferObject UserCategoryPermissionDTO {
+			Long id
+			reference @UserDTO user
+			reference @CategoryDetailsPermissionDTO  userCategoryDetailPermission
+		
+		}
+		
+		Entity UserGroupCategoryPermission {
+			databaseTable = "USERGROUP_CATEGORY"
+			scaffold
+			reference @UserGroup userGroup key databaseColumn = "USERGROUP_ID" opposite userGroupCategoryPermissions
+			reference @CategoryDetailsPermission  categoryDetailPermissions key databaseColumn = "CATEGORYDETAIL_PERMISSION_ID" opposite userGroupCategoryDetailPermissions
+		}
+		
+		
+		
+		DataTransferObject UserGroupCategoryPermissionDTO {
+			Long id
+			reference @UserGroupDTO userGroup
+			reference @CategoryDetailsPermissionDTO  userCategoryDetailPermission
+		}
+		
+		
+		
+		
+		
+		
+	}
+}

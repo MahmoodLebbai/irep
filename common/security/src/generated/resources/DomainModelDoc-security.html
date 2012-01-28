@@ -1,0 +1,9617 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<style type="text/css" media="screen,print">   
+    	@import url("DomainModelDoc.css");
+  	</style> 
+	<title>Summary Documation of security module(SecurityPart)</title> 
+</head>
+<body>
+
+	<div id="wrap">
+  	<a name="module_security"></a>
+	<h1>Summary Documation of security module <a href="DomainModelDoc.html">(SecurityPart)</a></h1>
+	
+	
+	
+	<p></p>
+	
+	<div id="menu">
+			
+			<ul>
+			
+				<li><a href="DomainModelDoc-security.html#Applications">Applications</a></li>
+
+				<li><a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#ApplicationsService">ApplicationsService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#Category">Category</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDetailService">CategoryDetailService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryDetailsPermissionService">CategoryDetailsPermissionService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#CategoryService">CategoryService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#Department">Department</a></li>
+
+				<li><a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#DepartmentService">DepartmentService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#Modules">Modules</a></li>
+
+				<li><a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#ModulesService">ModulesService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#Operation">Operation</a></li>
+
+				<li><a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#OperationService">OperationService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#Permission">Permission</a></li>
+
+				<li><a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#PermissionService">PermissionService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#Role">Role</a></li>
+
+				<li><a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#RolePermission">RolePermission</a></li>
+
+				<li><a href="DomainModelDoc-security.html#RolePermissionDTO">RolePermissionDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#RolePermissionService">RolePermissionService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#RoleService">RoleService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#SecurityService">SecurityService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#User">User</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserCategoryPermissionDTO">UserCategoryPermissionDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserCategoryPermissionService">UserCategoryPermissionService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserDelegationService">UserDelegationService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserEmail">UserEmail</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserEmailDTO">UserEmailDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroup">UserGroup</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupCategoryPermissionDTO">UserGroupCategoryPermissionDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupCategoryPermissionService">UserGroupCategoryPermissionService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupRoleDTO">UserGroupRoleDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupRoleService">UserGroupRoleService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserGroupService">UserGroupService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserPhone">UserPhone</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserPhoneDTO">UserPhoneDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserRole">UserRole</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserRoleDTO">UserRoleDTO</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserRoleService">UserRoleService</a></li>
+
+				<li><a href="DomainModelDoc-security.html#UserService">UserService</a></li>
+
+			</ul>
+
+	</div>
+
+	
+		
+	<div id="module_graph">
+	    <hr/>
+	    <p><b>All in security</b></p>
+		<a href="umlgraph-security.dot.png">
+		<img src="umlgraph-security.dot.png" />
+		</a>
+		<hr/>
+		<p><b>Persistent Domain in security</b></p>
+		<a href="umlgraph-security-entity.dot.png">
+		<img src="umlgraph-security-entity.dot.png" />
+		</a>
+	</div>
+
+	
+	
+	<div id="services">
+	<hr/>
+	
+	<a name="ApplicationsService"></a>
+	<h3>ApplicationsService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Applications">Applications</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Applications">Applications</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Applications">Applications</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Applications">Applications</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Applications">Applications</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="CategoryDetailService"></a>
+	<h3>CategoryDetailService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="CategoryDetailsPermissionService"></a>
+	<h3>CategoryDetailsPermissionService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="CategoryService"></a>
+	<h3>CategoryService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Category">Category</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Category">Category</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Category">Category</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Category">Category</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Category">Category</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="DepartmentService"></a>
+	<h3>DepartmentService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Department">Department</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Department">Department</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Department">Department</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Department">Department</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Department">Department</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="ModulesService"></a>
+	<h3>ModulesService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Modules">Modules</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Modules">Modules</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Modules">Modules</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Modules">Modules</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Modules">Modules</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="OperationService"></a>
+	<h3>OperationService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Operation">Operation</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Operation">Operation</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Operation">Operation</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Operation">Operation</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Operation">Operation</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="PermissionService"></a>
+	<h3>PermissionService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Permission">Permission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Permission">Permission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Permission">Permission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Permission">Permission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="RolePermissionService"></a>
+	<h3>RolePermissionService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="RoleService"></a>
+	<h3>RoleService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Role">Role</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Role">Role</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Role">Role</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#Role">Role</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#Role">Role</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="SecurityService"></a>
+	<h3>SecurityService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>addApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ application</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategory</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ category</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetailPermissionToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetailPermissionToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;
+	
+ categoryDetail</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addCategoryDetailsPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addModules</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ roleId</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addOperations</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ permission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addPermissionToOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ operation</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addRoleToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addRoleToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>addUserDelegation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ userDelegation</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>createDepartment</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ department</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>createUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>createUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategory</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ category</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetailPermissionToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetailPermissionToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;
+	
+ categoryDetail</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteCategoryDetailsPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteDepartment</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ department</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteModules</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ roleId</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperationPermissionToRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteOperations</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deletePermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ permission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deletePermissionToOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ operation</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>&gt;
+	
+ permissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteRoleToUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteRoleToUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ roles</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteUserDelegation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ userDelegation</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>deleteUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findAllRoles</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findAllUserGroups</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findAllUsers</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ applicationId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplicationByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ applicationCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplicationByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ applicationName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findApplications</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ applicationId</li>
+
+	<li>
+	
+		Long
+	
+ moduleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ moduleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModuleByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ moduleCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findModuleByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ moduleName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ applicationId</li>
+
+	<li>
+	
+		Long
+	
+ moduleId</li>
+
+	<li>
+	
+		Long
+	
+ operationId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ operationId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperationByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ operationCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findOperationByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ operationName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ roleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findRoleByCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findRoleByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userId</li>
+
+	<li>
+	
+		String
+	
+ password</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserByGroupId</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ userGroupId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ userId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserByUserId</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserGroupById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ userGroupId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserGroupByName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userGroupName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUsersByRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		long
+	
+ roleId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUsersByRoleCode</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleCode</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUsersByRoleName</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ roleName</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyCategory</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ category</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyCategoryDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;
+	
+ categoryDetail</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyCategoryDetailsPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;
+	
+ categoryDetailPermissions</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyDepartment</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ department</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyPermission</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ permission</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyRole</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ role</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ user</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyUserDelegation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ userDelegation</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>modifyUserGroup</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ userGroup</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>removeAllApplication</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>removeApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ applicationDTO</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		void
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateApplication</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ application</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateModule</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateModules</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateOperation</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>
+	
+ module</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>updateOperations</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;
+	
+ modules</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserCategoryPermissionService"></a>
+	<h3>UserCategoryPermissionService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserDelegationService"></a>
+	<h3>UserDelegationService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserGroupCategoryPermissionService"></a>
+	<h3>UserGroupCategoryPermissionService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserGroupRoleService"></a>
+	<h3>UserGroupRoleService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserGroupService"></a>
+	<h3>UserGroupService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroup">UserGroup</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserGroup">UserGroup</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroup">UserGroup</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserGroup">UserGroup</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserGroup">UserGroup</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserRoleService"></a>
+	<h3>UserRoleService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserRole">UserRole</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#UserRole">UserRole</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserRole">UserRole</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#UserRole">UserRole</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#UserRole">UserRole</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	<a name="UserService"></a>
+	<h3>UserService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-security.html#User">User</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUser</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findUserByEmail</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ emailId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>getUserDetails</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ userId</li>
+
+	<li>
+	
+		String
+	
+ password</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-security.html#User">User</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	</div>
+	<div id="consumers">
+	
+	</div>
+	<div id="domainObjects">
+	
+	<a name="Applications"></a>
+	<h3>Applications</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td><b>applicationCode</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>applicationDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>applicationName</b></td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>applicationStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>modules</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#Modules">Modules</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="ApplicationsDTO"></a>
+	<h3>ApplicationsDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>applicationCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>applicationDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>applicationName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>applicationStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>modules</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="Category"></a>
+	<h3>Category</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>categoryDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryDetails</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>categoryID</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryName</td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="CategoryDTO"></a>
+	<h3>CategoryDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>categoryDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryDetails</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryID</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="CategoryDetail"></a>
+	<h3>CategoryDetail</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td><b>category</b></td>
+		<td><a href="DomainModelDoc-security.html#Category">Category</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryDetailPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>desc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>name</td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>status</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="CategoryDetailDTO"></a>
+	<h3>CategoryDetailDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>category</td>
+		<td><a href="DomainModelDoc-security.html#CategoryDTO">CategoryDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryDetailPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>desc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>name</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>status</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="CategoryDetailsPermission"></a>
+	<h3>CategoryDetailsPermission</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>categoryDetail</td>
+		<td><a href="DomainModelDoc-security.html#CategoryDetail">CategoryDetail</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryPermissionCode</td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>deleteFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>modifyFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userCategoryDetailPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupCategoryDetailPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>uuid</td>
+		<td>UUID</td>
+		<td>36</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Unique id needed for equals and hashCode, since there is no natural key
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>viewFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="CategoryDetailsPermissionDTO"></a>
+	<h3>CategoryDetailsPermissionDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>categoryDetail</td>
+		<td><a href="DomainModelDoc-security.html#CategoryDetailDTO">CategoryDetailDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>categoryPermissionCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>deleteFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>modifyFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>viewFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="Department"></a>
+	<h3>Department</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>departmentCode</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>departmentDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>departmentName</b></td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>users</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#User">User</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="DepartmentDTO"></a>
+	<h3>DepartmentDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>departmentCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>departmentDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>departmentName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>users</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="Modules"></a>
+	<h3>Modules</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>application</td>
+		<td><a href="DomainModelDoc-security.html#Applications">Applications</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>moduleCode</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleName</td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>operations</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#Operation">Operation</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="ModulesDTO"></a>
+	<h3>ModulesDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>application</td>
+		<td><a href="DomainModelDoc-security.html#ApplicationsDTO">ApplicationsDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>moduleStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>operations</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="Operation"></a>
+	<h3>Operation</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>functionCode</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>functionDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>functionName</td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>functionStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>module</td>
+		<td><a href="DomainModelDoc-security.html#Modules">Modules</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>permissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#Permission">Permission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="OperationDTO"></a>
+	<h3>OperationDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>functionCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>functionDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>functionName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>functionStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>module</td>
+		<td><a href="DomainModelDoc-security.html#ModulesDTO">ModulesDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>permissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="Permission"></a>
+	<h3>Permission</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>deleteFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>modifyFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>operation</b></td>
+		<td><a href="DomainModelDoc-security.html#Operation">Operation</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>permissionCode</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>rolePermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>viewFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="PermissionDTO"></a>
+	<h3>PermissionDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>deleteFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>modifyFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>operation</td>
+		<td><a href="DomainModelDoc-security.html#OperationDTO">OperationDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>permissionCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>viewFlag</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="Role"></a>
+	<h3>Role</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>roleCode</b></td>
+		<td>String</td>
+		<td>20</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>roleDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>roleName</b></td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>rolePermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#RolePermission">RolePermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>roleStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserRole">UserRole</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="RoleDTO"></a>
+	<h3>RoleDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>roleCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>roleDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>roleName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>rolePermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#RolePermissionDTO">RolePermissionDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>roleStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupRoleDTO">UserGroupRoleDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserRoleDTO">UserRoleDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="RolePermission"></a>
+	<h3>RolePermission</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>permission</b></td>
+		<td><a href="DomainModelDoc-security.html#Permission">Permission</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>role</b></td>
+		<td><a href="DomainModelDoc-security.html#Role">Role</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="RolePermissionDTO"></a>
+	<h3>RolePermissionDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>permission</td>
+		<td><a href="DomainModelDoc-security.html#PermissionDTO">PermissionDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>role</td>
+		<td><a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="User"></a>
+	<h3>User</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>dateOfBirth</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>department</td>
+		<td><a href="DomainModelDoc-security.html#Department">Department</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>emails</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserEmail">UserEmail</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>firstName</td>
+		<td>String</td>
+		<td>100</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastName</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>middleName</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>password</td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>passwordExpiryDate</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>phones</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserPhone">UserPhone</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>reportingUser</td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userCategoryPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserCategoryPermission">UserCategoryPermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userDelegations</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserDelegation">UserDelegation</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroup</td>
+		<td><a href="DomainModelDoc-security.html#UserGroup">UserGroup</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>userId</b></td>
+		<td>String</td>
+		<td>100</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserRole">UserRole</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserCategoryPermission"></a>
+	<h3>UserCategoryPermission</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td><b>categoryDetailPermissions</b></td>
+		<td><a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>user</b></td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserCategoryPermissionDTO"></a>
+	<h3>UserCategoryPermissionDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userCategoryDetailPermission</td>
+		<td><a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserDTO"></a>
+	<h3>UserDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>dateOfBirth</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>department</td>
+		<td><a href="DomainModelDoc-security.html#DepartmentDTO">DepartmentDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>emails</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserEmailDTO">UserEmailDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>firstName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>middleName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>password</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>passwordExpiryDate</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>phones</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserPhoneDTO">UserPhoneDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>reportingUserId</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userCategoryPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserCategoryPermissionDTO">UserCategoryPermissionDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userDelegations</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserDelegationDTO">UserDelegationDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroup</td>
+		<td><a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userId</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserRoleDTO">UserRoleDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserDelegation"></a>
+	<h3>UserDelegation</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>delegatedUser</b></td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>delegationStatus</b></td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>endDate</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>startDate</b></td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>user</b></td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserDelegationDTO"></a>
+	<h3>UserDelegationDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>delegatedUser</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>delegationStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>endDate</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>startDate</td>
+		<td>Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserEmail"></a>
+	<h3>UserEmail</h3>
+	
+	<p><i>Entity</i>, 
+	not aggregate root, belongs to 
+		<a href="DomainModelDoc-security.html#User">User</a>
+</p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>emailId</b></td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>emailType</td>
+		<td>String</td>
+		<td>10</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserEmailDTO"></a>
+	<h3>UserEmailDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>emailId</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>emailType</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserGroup"></a>
+	<h3>UserGroup</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupCategoryPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupCategoryPermission">UserGroupCategoryPermission</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>userGroupCode</b></td>
+		<td>String</td>
+		<td>10</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupDesc</td>
+		<td>String</td>
+		<td>100</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>userGroupName</b></td>
+		<td>String</td>
+		<td>100</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupRole">UserGroupRole</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>users</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#User">User</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserGroupCategoryPermission"></a>
+	<h3>UserGroupCategoryPermission</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td><b>categoryDetailPermissions</b></td>
+		<td><a href="DomainModelDoc-security.html#CategoryDetailsPermission">CategoryDetailsPermission</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>userGroup</b></td>
+		<td><a href="DomainModelDoc-security.html#UserGroup">UserGroup</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserGroupCategoryPermissionDTO"></a>
+	<h3>UserGroupCategoryPermissionDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userCategoryDetailPermission</td>
+		<td><a href="DomainModelDoc-security.html#CategoryDetailsPermissionDTO">CategoryDetailsPermissionDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroup</td>
+		<td><a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserGroupDTO"></a>
+	<h3>UserGroupDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupCategoryPermissions</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupCategoryPermissionDTO">UserGroupCategoryPermissionDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupCode</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupDesc</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupRoles</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserGroupRoleDTO">UserGroupRoleDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroupStatus</td>
+		<td>boolean</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>users</td>
+		<td>List&lt;<a href="DomainModelDoc-security.html#UserDTO">UserDTO</a>&gt;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserGroupRole"></a>
+	<h3>UserGroupRole</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>role</b></td>
+		<td><a href="DomainModelDoc-security.html#Role">Role</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>userGroup</b></td>
+		<td><a href="DomainModelDoc-security.html#UserGroup">UserGroup</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserGroupRoleDTO"></a>
+	<h3>UserGroupRoleDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>role</td>
+		<td><a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userGroup</td>
+		<td><a href="DomainModelDoc-security.html#UserGroupDTO">UserGroupDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserPhone"></a>
+	<h3>UserPhone</h3>
+	
+	<p><i>Entity</i>, 
+	not aggregate root, belongs to 
+		<a href="DomainModelDoc-security.html#User">User</a>
+</p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>phoneNumber</td>
+		<td>String</td>
+		<td>15</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>phoneType</td>
+		<td>String</td>
+		<td>10</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>uuid</td>
+		<td>UUID</td>
+		<td>36</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Unique id needed for equals and hashCode, since there is no natural key
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserPhoneDTO"></a>
+	<h3>UserPhoneDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>phoneNumber</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>phoneType</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserRole"></a>
+	<h3>UserRole</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>role</b></td>
+		<td><a href="DomainModelDoc-security.html#Role">Role</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>user</b></td>
+		<td><a href="DomainModelDoc-security.html#User">User</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="UserRoleDTO"></a>
+	<h3>UserRoleDTO</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>id</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>role</td>
+		<td><a href="DomainModelDoc-security.html#RoleDTO">RoleDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>user</td>
+		<td><a href="DomainModelDoc-security.html#UserDTO">UserDTO</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	</div>
+
+
+	</div>
+</body>
+</html>	
+

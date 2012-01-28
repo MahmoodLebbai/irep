@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">  
+  <persistence-unit name="SecurityPartEntityManagerFactory"> 
+    <description>JPA configuration for SecurityPart</description>  
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>  
+    <!-- annotated classes -->  
+    <class>com.fos.common.security.domain.Applications</class>  
+    <class>com.fos.common.security.domain.Category</class>  
+    <class>com.fos.common.security.domain.CategoryDetail</class>  
+    <class>com.fos.common.security.domain.CategoryDetailsPermission</class>  
+    <class>com.fos.common.security.domain.Department</class>  
+    <class>com.fos.common.security.domain.Modules</class>  
+    <class>com.fos.common.security.domain.Operation</class>  
+    <class>com.fos.common.security.domain.Permission</class>  
+    <class>com.fos.common.security.domain.Role</class>  
+    <class>com.fos.common.security.domain.RolePermission</class>  
+    <class>com.fos.common.security.domain.User</class>  
+    <class>com.fos.common.security.domain.UserCategoryPermission</class>  
+    <class>com.fos.common.security.domain.UserDelegation</class>  
+    <class>com.fos.common.security.domain.UserEmail</class>  
+    <class>com.fos.common.security.domain.UserGroup</class>  
+    <class>com.fos.common.security.domain.UserGroupCategoryPermission</class>  
+    <class>com.fos.common.security.domain.UserGroupRole</class>  
+    <class>com.fos.common.security.domain.UserPhone</class>  
+    <class>com.fos.common.security.domain.UserRole</class>  
+    <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>  
+    <validation-mode>AUTO</validation-mode>  
+    <!-- propeties  -->  
+    <properties> 
+      <property name="hibernate.dialect" value="org.fornax.cartridges.sculptor.framework.persistence.CustomHSQLDialect"/>  
+      <property name="hibernate.show_sql" value="true"/>  
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>  
+      <property name="query.substitutions" value="true 1, false 0"/>  
+      <property name="hibernate.cache.use_query_cache" value="true"/>  
+      <property name="hibernate.cache.provider_class" value="net.sf.ehcache.hibernate.EhCacheProvider"/>  
+      <!-- add additional configuration properties by using SpecialCases.xpt "AROUND templates::jpa::JPA::persistenceUnitAdditionalPropertiesTest FOR Application" --> 
+    </properties>  
+    <!-- add additional configuration properties by using SpecialCases.xpt "AROUND templates::jpa::JPA::persistenceUnitAdditions FOR Application" --> 
+  </persistence-unit> 
+</persistence>

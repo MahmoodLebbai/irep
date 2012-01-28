@@ -1,0 +1,904 @@
+
+	
+digraph G {             
+	fontsize = 10        
+	node [                          
+		fontsize = 10                
+		fontname="arial"
+		shape=plaintext
+	     ]        
+	     
+	edge [                            
+		fontsize = 10        
+	     ]        
+	
+	
+	
+		subgraph clustersecurity {
+			label = "security"  
+			
+				
+				
+
+	Applications [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Applications </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * applicationCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * applicationName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + applicationStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Category [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Category </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * categoryID : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + categoryStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDetail [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetail </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + name : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + desc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + status : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	CategoryDetailsPermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> CategoryDetailsPermission </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + categoryPermissionCode : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + createFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + modifyFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + deleteFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + viewFlag : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Department [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Department </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * departmentCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * departmentName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + departmentDesc : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Modules [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Modules </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * moduleCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + moduleStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Operation [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Operation </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * functionCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + functionStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Permission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Permission </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * permissionCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + createFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + modifyFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + deleteFlag : boolean </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + viewFlag : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	Role [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> Role </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * roleCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * roleName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + roleStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	RolePermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> RolePermission </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	User [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> User </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * userId : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + firstName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + middleName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + lastName : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + password : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + passwordExpiryDate : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + dateOfBirth : Date </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserCategoryPermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserCategoryPermission </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserDelegation [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserDelegation </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * delegationStatus : boolean </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * startDate : Date </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + endDate : Date </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserEmail [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserEmail </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + emailType : String </td></tr>
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * emailId : String </font> </td></tr>			
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroup [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroup </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * userGroupCode : String </font> </td></tr>			
+			
+		
+		
+
+		
+			 
+				<tr><td align="left"><font face="arialbd"> * userGroupName : String </font> </td></tr>			
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupDesc : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + userGroupStatus : boolean </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupCategoryPermission [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupCategoryPermission </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserGroupRole [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserGroupRole </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserPhone [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserPhone </font></td></tr>
+	</table></td></tr>
+	
+	
+		<tr><td>
+			<table border="0" cellspacing="0" cellpadding="1">	
+		
+		
+			
+				<tr><td align="left"> + phoneType : String </td></tr>
+			
+		
+		
+
+		
+			
+				<tr><td align="left"> + phoneNumber : String </td></tr>
+			
+		
+		
+
+		
+		
+		
+			</table>		
+		</td></tr>
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+	UserRole [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserRole </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+			
+		}
+	
+
+	
+		
+	edge [arrowhead = "empty"]
+
+		
+		
+	edge [arrowhead = "none"]
+
+		
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n modules" taillabel="application" labeldistance="2.0" labelangle="-30"]
+	
+		Applications -> Modules
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Category -> CategoryDetail
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n categoryDetailPermissions" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetail -> CategoryDetailsPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n userCategoryDetailPermissions" taillabel="categoryDetailPermissions" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailsPermission -> UserCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n userGroupCategoryDetailPermissions" taillabel="categoryDetailPermissions" labeldistance="2.0" labelangle="-30"]
+	
+		CategoryDetailsPermission -> UserGroupCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Department -> User
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="module" labeldistance="2.0" labelangle="-30"]
+	
+		Modules -> Operation
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Operation -> Permission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Permission -> RolePermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Role -> RolePermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Role -> UserGroupRole
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		Role -> UserRole
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="reportingUser" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> User
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserDelegation
+
+			edge [arrowtail="diamond" arrowhead = "none" headlabel="0..n emails" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserEmail
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="" taillabel="0..n " labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserGroup
+
+			edge [arrowtail="diamond" arrowhead = "none" headlabel="0..n phones" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserPhone
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		User -> UserRole
+
+			edge [arrowtail="none" arrowhead = "open" headlabel="delegatedUser" taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserDelegation -> User
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroup -> UserGroupCategoryPermission
+
+	    	edge [arrowtail="none" arrowhead = "none" headlabel="0..n " taillabel="" labeldistance="2.0" labelangle="-30"]
+	
+		UserGroup -> UserGroupRole
+
+		
+	
+	
+	}
+	

@@ -1,0 +1,22 @@
+#
+# Ignore file, holdind file names which can't be removed anymore
+#
+
+src/main/java/com/fos/common/service/placeholder.txt
+src/main/resources/generator/sculptor-generator.properties
+src/main/resources/generator/SpecialCases.ext
+src/main/resources/generator/SpecialCases.xpt
+src/main/resources/generator/Workflow.mwe2
+src/main/resources/model.btdesign
+src/test/java/com/fos/common/service/placeholder.txt
+src/test/resources/log4j-test.properties
+src/test/resources/placeholder.txt
+src/main/resources/security.btdesign
+src/main/java/com/fos/common/service/security/serviceimpl/SecurityServiceImpl.java
+src/main/java/com/fos/common/service/security/SecurityErrorCodes.java
+src/main/java/com/fos/common/service/security/SecurityConstants.java
+src/main/java/com/fos/common/service/security/domain/User.java
+src/main/java/com/fos/common/security/SecurityConstants.java
+src/main/java/com/fos/common/security/SecurityErrorCodes.java
+src/main/java/com/fos/common/security/serviceimpl/SecurityServiceImpl.java
+src/test/java/com/fos/common/security/service/MapperTest.java

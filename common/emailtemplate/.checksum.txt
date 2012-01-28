@@ -1,0 +1,4 @@
+# Check sum file
+# Entries are in the following format: checksum:file
+
+bd23d3d0752a45d35c034ed454be2e9470eeb074:src/test/java/com/fos/common/emailtemplate/service/EmailTemplateServiceTest.java

@@ -1,0 +1,18 @@
+#
+# Ignore file, holdind file names which can't be removed anymore
+#
+
+src/main/java/com/fos/irep/web/application/placeholder.txt
+src/main/resources/generator/sculptor-generator.properties
+src/main/resources/generator/SpecialCases.ext
+src/main/resources/generator/SpecialCases.xpt
+src/main/resources/generator/Workflow.mwe2
+src/main/resources/model.btdesign
+src/test/java/com/fos/irep/web/application/placeholder.txt
+src/test/resources/log4j-test.properties
+src/test/resources/placeholder.txt
+src/main/resources/irepapplication.btdesign
+src/main/resources/security.btdesign
+src/main/java/com/fos/irep/web/application/irepapplication/managerimpl/SecurityManagerImpl.java
+src/main/resources/generator/IrepDomainObject.xpt
+src/main/resources/crypto.btdesign

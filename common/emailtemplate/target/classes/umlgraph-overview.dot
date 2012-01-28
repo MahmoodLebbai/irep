@@ -1,0 +1,94 @@
+
+	
+digraph G {             
+	fontsize = 10        
+	node [                          
+		fontsize = 10                
+		fontname="arial"
+		shape=plaintext
+	     ]        
+	     
+	edge [                            
+		fontsize = 10        
+	     ]        
+	
+	
+	
+		subgraph clusteremailtemplate {
+			label = "emailtemplate"  
+			
+				
+					
+	EmailTemplateService [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#CCFF99" >
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Service&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> EmailTemplateService </font></td></tr>
+	</table></td></tr>
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+					
+				
+				
+
+	EmailTemplate [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC33">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;Entity&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> EmailTemplate </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+
+
+
+
+
+
+
+	UserRegisteration [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="0" port="p" bgcolor="#FFCC99">
+	<tr><td>
+	<table border="0" cellspacing="1" cellpadding="1">
+		<tr><td> &laquo;DataTransferObject&raquo; </td></tr>
+		<tr><td><font face="arialbd"  point-size="12.0"> UserRegisteration </font></td></tr>
+	</table></td></tr>
+	
+	
+	
+	
+	</table>>, fontname="arial", fontcolor="black", fontsize=9.0];
+
+
+			
+		}
+	
+
+	
+		
+	edge [arrowhead = "empty"]
+
+		
+		
+	edge [arrowhead = "none"]
+
+		
+		
+			
+	
+		edge [arrowtail="none" arrowhead = "open" headlabel = "" taillabel = "" style = "dashed"]
+		
+		
+				EmailTemplateService -> EmailTemplate
+		
+	
+
+		
+	
+	
+	}
+	

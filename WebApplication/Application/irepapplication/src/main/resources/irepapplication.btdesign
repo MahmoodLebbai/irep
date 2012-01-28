@@ -1,0 +1,132 @@
+import "classpath:/security.btdesign"
+
+Application IrepApplication {
+
+	basePackage=com.fos.irep.web.application
+
+	Module irepapplication {
+
+		Service SecurityManager {
+			inject SecurityService
+
+			/* Application Service Methods */
+			@ApplicationsDTO addApplication(@ApplicationsDTO application) throws SecurityManagerException;
+			@ApplicationsDTO updateApplication(@ApplicationsDTO application) throws SecurityManagerException;
+			List<@ApplicationsDTO> findApplications() throws SecurityManagerException;
+			@ApplicationsDTO findApplication(Long applicationId) throws SecurityManagerException;
+			@ApplicationsDTO findApplicationByCode(String applicationCode) throws SecurityManagerException;
+			@ApplicationsDTO findApplicationByName(String applicationName) throws SecurityManagerException;
+			void removeApplication(@ApplicationsDTO applicationDTO) throws SecurityManagerException;
+			void removeAllApplication() throws SecurityManagerException;
+
+			/* Modules  Service Methods */
+			@ApplicationsDTO addModule(@ModulesDTO module) throws SecurityManagerException;
+			@ApplicationsDTO addModules(List<@ModulesDTO> modules) throws SecurityManagerException;
+			@ApplicationsDTO updateModule(@ModulesDTO module) throws SecurityManagerException;
+			@ApplicationsDTO updateModules(List<@ModulesDTO> modules) throws SecurityManagerException;
+			void deleteModule(@ModulesDTO module) throws SecurityManagerException;
+			void deleteModules(List<@ModulesDTO> modules) throws SecurityManagerException;
+			@ModulesDTO findModule(Long applicationId, Long moduleId) throws SecurityManagerException;
+			@ModulesDTO findModule(Long moduleId) throws SecurityManagerException;
+			@ModulesDTO findModuleByCode(String moduleCode) throws SecurityManagerException;
+			@ModulesDTO findModuleByName(String moduleName) throws SecurityManagerException;
+
+			/* Operation */
+			@ApplicationsDTO addOperation(@OperationDTO module) throws SecurityManagerException;
+			@ApplicationsDTO addOperations(List<@OperationDTO> modules) throws SecurityManagerException;
+			@ApplicationsDTO updateOperation(@OperationDTO module) throws SecurityManagerException;
+			@ApplicationsDTO updateOperations(List<@OperationDTO> modules) throws SecurityManagerException;
+			void deleteOperation(@OperationDTO module) throws SecurityManagerException;
+			void deleteOperations(List<@OperationDTO> modules) throws SecurityManagerException;
+			@OperationDTO findOperation(Long applicationId, Long moduleId, Long operationId) throws SecurityManagerException;
+			@OperationDTO findOperation(Long operationId) throws SecurityManagerException;
+			@OperationDTO findOperationByCode(String operationCode) throws SecurityManagerException;
+			@OperationDTO findOperationByName(String operationName) throws SecurityManagerException;
+			@OperationDTO addPermissionToOperation(@OperationDTO operation, List<@PermissionDTO> permissions) throws SecurityManagerException;
+			void deletePermissionToOperation(@OperationDTO operation, List<@PermissionDTO> permissions) throws SecurityManagerException;
+
+			/* Permission */
+			@PermissionDTO addPermission(@PermissionDTO permission) throws SecurityManagerException;
+			@PermissionDTO modifyPermission(@PermissionDTO permission) throws SecurityManagerException;
+			void deletePermission(@PermissionDTO permission) throws SecurityManagerException;
+
+			/* Role */
+			@RoleDTO addRole(@RoleDTO role) throws SecurityManagerException;
+			@RoleDTO modifyRole(@RoleDTO role) throws SecurityManagerException;
+			void deleteRole(@RoleDTO role) throws SecurityManagerException;
+			@RoleDTO addOperationPermissionToRole(@RoleDTO role, List<@Permission> permissions) throws SecurityManagerException;
+			@RoleDTO deleteOperationPermissionToRole(@RoleDTO role, List<@Permission> permissions) throws SecurityManagerException;
+			@RoleDTO addOperationPermissionToRole(Long roleId, List<@Permission> permissions) throws SecurityManagerException;
+			@RoleDTO deleteOperationPermissionToRole(Long roleId, List<@Permission> permissions) throws SecurityManagerException;
+			@RoleDTO addOperationPermissionToRole(String roleCode, List<@Permission> permissions) throws SecurityManagerException;
+			@RoleDTO deleteOperationPermissionToRole(String roleCode, List<@Permission> permissions) throws SecurityManagerException;
+			List<@RoleDTO> findAllRoles() throws SecurityManagerException;
+			@RoleDTO findRole(long roleId) throws SecurityManagerException;
+			@RoleDTO findRoleByCode(String roleCode) throws SecurityManagerException;
+			@RoleDTO findRoleByName(String roleName) throws SecurityManagerException;
+
+			/* Category */
+			@CategoryDTO addCategory(@CategoryDTO category) throws SecurityManagerException;
+			@CategoryDTO modifyCategory(@CategoryDTO category) throws SecurityManagerException;
+			void deleteCategory(@CategoryDTO category) throws SecurityManagerException;
+			@CategoryDTO addCategoryDetails(List<@CategoryDetailDTO> categoryDetail) throws SecurityManagerException;
+			@CategoryDTO modifyCategoryDetails(List<@CategoryDetailDTO> categoryDetail) throws SecurityManagerException;
+			@CategoryDTO deleteCategoryDetails(List<@CategoryDetailDTO> categoryDetail) throws SecurityManagerException;
+
+			/* CategoryDetail Permission */
+			@CategoryDetailDTO addCategoryDetailsPermission(List<@CategoryDetailsPermissionDTO> categoryDetailPermissions)
+			throws SecurityManagerException;
+			@CategoryDetailDTO modifyCategoryDetailsPermission(List<@CategoryDetailsPermissionDTO> categoryDetailPermissions)
+			throws SecurityManagerException;
+			void deleteCategoryDetailsPermission(List<@CategoryDetailsPermissionDTO> categoryDetailPermissions) throws
+			SecurityManagerException;
+
+			/* UserDelegarion Permission */
+			@UserDelegationDTO addUserDelegation(@UserDelegationDTO userDelegation) throws SecurityManagerException;
+			@UserDelegationDTO modifyUserDelegation(@UserDelegationDTO userDelegation) throws SecurityManagerException;
+			void deleteUserDelegation(@UserDelegationDTO userDelegation) throws SecurityManagerException;
+
+			/* User Service */
+			@UserDTO createUser(@UserDTO user) throws SecurityManagerException;
+			@UserDTO modifyUser(@UserDTO user) throws SecurityManagerException;
+			void deleteUser(@UserDTO user) throws SecurityManagerException;
+			@UserDTO addRoleToUser(@UserDTO user, List<@RoleDTO> roles) throws SecurityManagerException;
+			@UserDTO deleteRoleToUser(@UserDTO user, List<@RoleDTO> roles) throws SecurityManagerException;
+			@UserDTO addCategoryDetailPermissionToUser(@UserDTO user, List<@CategoryDetailsPermissionDTO>
+			categoryDetailPermission) throws SecurityManagerException;
+			@UserDTO deleteCategoryDetailPermissionToUser(@UserDTO user, List<@CategoryDetailsPermissionDTO>
+			categoryDetailPermission) throws SecurityManagerException;
+			List<@UserDTO> findAllUsers() throws SecurityManagerException;
+			List<@UserDTO> findUsersByRole(long roleId) throws SecurityManagerException;
+			List<@UserDTO> findUsersByRoleCode(String roleCode) throws SecurityManagerException;
+			List<@UserDTO> findUsersByRoleName(String roleName) throws SecurityManagerException;
+			List<@UserDTO> findUserByGroupId(long userGroupId) throws SecurityManagerException;
+			@UserDTO findUserByUserId(String userId) throws SecurityManagerException;
+			@UserDTO findUser(String userId, String password) throws SecurityManagerException;
+			@UserDTO findUserById(long userId) throws SecurityManagerException;
+
+			/* Department */
+			@DepartmentDTO createDepartment(@DepartmentDTO department) throws SecurityManagerException;
+			@DepartmentDTO modifyDepartment(@DepartmentDTO department) throws SecurityManagerException;
+			void deleteDepartment(@DepartmentDTO department) throws SecurityManagerException;
+
+			/* UserGroup Service */
+			@UserGroupDTO createUserGroup(@UserGroupDTO userGroup) throws SecurityManagerException;
+			@UserGroupDTO modifyUserGroup(@UserGroupDTO userGroup) throws SecurityManagerException;
+			void deleteUserGroup(@UserGroupDTO userGroup) throws SecurityManagerException;
+			@UserGroupDTO addRoleToUserGroup(@UserGroupDTO userGroup, List<@RoleDTO> roles) throws SecurityManagerException;
+			@UserGroupDTO deleteRoleToUserGroup(@UserGroupDTO userGroup, List<@RoleDTO> roles) throws SecurityManagerException;
+			@UserGroupDTO addCategoryDetailPermissionToUserGroup(@UserGroupDTO user, List<@CategoryDetailsPermissionDTO>
+			categoryDetailPermission) throws SecurityManagerException;
+			@UserGroupDTO deleteCategoryDetailPermissionToUserGroup(@UserGroupDTO user, List<@CategoryDetailsPermissionDTO>
+			categoryDetailPermission) throws SecurityManagerException;
+			List<@UserGroupDTO> findAllUserGroups() throws SecurityManagerException;
+			@UserGroupDTO findUserGroupByName(String userGroupName) throws SecurityManagerException;
+			@UserGroupDTO findUserGroupById(long userGroupId) throws SecurityManagerException;
+
+		}
+
+	}
+
+
+}

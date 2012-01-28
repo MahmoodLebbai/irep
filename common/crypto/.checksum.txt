@@ -1,0 +1,8 @@
+# Check sum file
+# Entries are in the following format: checksum:file
+
+738b2b0aff73d7fec1f387c206c48f073f5ab7e4:src/main/resources/logback.xml
+73401126b0f64705e5e05a4ab4d8c118a9b21fcd:src/main/resources/spring.properties
+82a8a817ae011a80db27a8536ae87c7cf9763dd1:src/main/resources/ehcache.xml
+fd044a6a2715a6121183c955b1bb31f11820914f:src/test/resources/spring-test.properties
+ff811c4bb1ffef7b034482e8315b9964862ca806:src/test/resources/logback-test.xml

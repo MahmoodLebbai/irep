@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="   http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context-3.0.xsd   http://www.springframework.org/schema/aop   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd   http://www.springframework.org/schema/jee   http://www.springframework.org/schema/jee/spring-jee-3.0.xsd   http://www.springframework.org/schema/tx   http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">  
+  <aop:aspectj-autoproxy/>  
+  <bean id="errorHandlingAdvice" class="org.fornax.cartridges.sculptor.framework.errorhandling.ErrorHandlingAdvice"/>  
+  <aop:config> 
+    <aop:pointcut id="businessService" expression="execution(public * com.fos.irep.web.application..manager.*.*(..))"/>  
+    <aop:pointcut id="readOnlyBusinessService" expression="execution(public * com.fos.irep.web.application..manager.*.get*(..)) or execution(public * com.fos.irep.web.application..manager.*.find*(..))"/>  
+    <!-- Repeating the expression, since I can't find a way to refer to the other pointcuts. -->  
+    <aop:pointcut id="updatingBusinessService" expression="execution(public * com.fos.irep.web.application..manager.*.*(..)) and not (execution(public * com.fos.irep.web.application..manager.*.get*(..)) or execution(public * com.fos.irep.web.application..manager.*.find*(..)))"/>  
+    <aop:advisor pointcut-ref="businessService" advice-ref="errorHandlingAdvice" order="3"/> 
+  </aop:config> 
+</beans>

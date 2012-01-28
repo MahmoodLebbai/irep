@@ -1,0 +1,23 @@
+#
+# Ignore file, holdind file names which can't be removed anymore
+#
+
+src/main/java/com/fos/common/service/placeholder.txt
+src/main/resources/generator/sculptor-generator.properties
+src/main/resources/generator/SpecialCases.ext
+src/main/resources/generator/SpecialCases.xpt
+src/main/resources/generator/Workflow.mwe2
+src/main/resources/model.btdesign
+src/test/java/com/fos/common/service/placeholder.txt
+src/test/resources/log4j-test.properties
+src/test/resources/placeholder.txt
+src/main/resources/crypto.btdesign
+src/main/resources/more.xml
+src/main/java/com/fos/common/service/crypto/serviceimpl/CryptoServiceImpl.java
+src/main/resources/conf/spring/crypto/Crypto-ApplicationContext.xml
+src/test/java/com/fos/common/service/crypto/service/CryptoServiceTest.java
+src/test/resources/more-test.xml
+src/test/resources/conf/spring/crypto/Crypto-ApplicationContext.xml
+src/test/resources/more-test_old.xml
+src/main/java/com/fos/common/crypto/serviceimpl/CryptoServiceImpl.java
+src/test/java/com/fos/common/crypto/service/CryptoServiceTest.java

@@ -1,0 +1,6 @@
+import 'classpath:/emailtemplate.btdesign'
+Application EmailTemplateApp {
+	
+	basePackage=com.fos.common
+
+}

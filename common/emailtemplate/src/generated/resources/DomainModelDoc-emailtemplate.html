@@ -1,0 +1,685 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<style type="text/css" media="screen,print">   
+    	@import url("DomainModelDoc.css");
+  	</style> 
+	<title>Summary Documation of emailtemplate module(EmailTemplateApp)</title> 
+</head>
+<body>
+
+	<div id="wrap">
+  	<a name="module_emailtemplate"></a>
+	<h1>Summary Documation of emailtemplate module <a href="DomainModelDoc.html">(EmailTemplateApp)</a></h1>
+	
+	
+	
+	<p></p>
+	
+	<div id="menu">
+			
+			<ul>
+			
+				<li><a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a></li>
+
+				<li><a href="DomainModelDoc-emailtemplate.html#EmailTemplateKey">EmailTemplateKey</a></li>
+
+				<li><a href="DomainModelDoc-emailtemplate.html#EmailTemplateService">EmailTemplateService</a></li>
+
+				<li><a href="DomainModelDoc-emailtemplate.html#EmailTemplatesEnum">EmailTemplatesEnum</a></li>
+
+				<li><a href="DomainModelDoc-emailtemplate.html#PassworkLinkExpiry">PassworkLinkExpiry</a></li>
+
+				<li><a href="DomainModelDoc-emailtemplate.html#UserRegisteration">UserRegisteration</a></li>
+
+			</ul>
+
+	</div>
+
+	
+		
+	<div id="module_graph">
+	    <hr/>
+	    <p><b>All in emailtemplate</b></p>
+		<a href="umlgraph-emailtemplate.dot.png">
+		<img src="umlgraph-emailtemplate.dot.png" />
+		</a>
+		<hr/>
+		<p><b>Persistent Domain in emailtemplate</b></p>
+		<a href="umlgraph-emailtemplate-entity.dot.png">
+		<img src="umlgraph-emailtemplate-entity.dot.png" />
+		</a>
+	</div>
+
+	
+	
+	<div id="services">
+	<hr/>
+	
+	<a name="EmailTemplateService"></a>
+	<h3>EmailTemplateService</h3>
+	<p></p>
+	
+	<div id="operation">
+	<b>delete</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+	</div>
+
+	<div id="operation">
+	<b>findAll</b>
+	<p></p>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>findById</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		Long
+	
+ id</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>getEmailContent</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ countryCode</li>
+
+	<li>
+	
+		String
+	
+ languageCode</li>
+
+	<li>
+	
+		<a href="DomainModelDoc-emailtemplate.html#EmailTemplatesEnum">EmailTemplatesEnum</a>
+	
+ emailTemplateType</li>
+
+	<li>
+	
+		Map&lt;Object&gt;
+	
+ dataModel</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		String
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>getEmailTemplate</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		String
+	
+ countryCode</li>
+
+	<li>
+	
+		String
+	
+ languageCode</li>
+
+	<li>
+	
+		String
+	
+ templateId</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		List&lt;<a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a>&gt;
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<div id="operation">
+	<b>save</b>
+	<p></p>
+	
+		<div id="operation_parameters">
+		<p>Parameters:</p>
+		<ul>
+		
+	<li>
+	
+		<a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a>
+	
+ entity</li>
+
+		</ul>
+		</div>
+	
+	
+		<div id="operation_returns">
+		<p>Returns:</p>
+		<ul><li>
+	
+		<a href="DomainModelDoc-emailtemplate.html#EmailTemplate">EmailTemplate</a>
+	
+ </li></ul>
+		</div>
+	
+	</div>
+
+	<hr/>
+
+	</div>
+	<div id="consumers">
+	
+	</div>
+	<div id="domainObjects">
+	
+	<a name="EmailTemplate"></a>
+	<h3>EmailTemplate</h3>
+	
+	<p><i>Entity</i></p>
+	
+	
+
+
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>createdBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who created the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>createdDate</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Creation timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>emailTemplateKey</b></td>
+		<td><a href="DomainModelDoc-emailtemplate.html#EmailTemplateKey">EmailTemplateKey</a></td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>ftlFilePath</td>
+		<td>String</td>
+		<td>100</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>id</td>
+		<td>IDTYPE</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		Generated unique id (GID pk)
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdated</td>
+		<td>java.util.Date</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Last updated timestamp of the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>lastUpdatedBy</td>
+		<td>String</td>
+		<td>50</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		Information about who last updated the object
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>status</td>
+		<td>Boolean</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>version</td>
+		<td>Long</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>X</td>
+		<td>
+		Update counter used for optimistic locking
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="EmailTemplateKey"></a>
+	<h3>EmailTemplateKey</h3>
+	
+	<p><i>Immutable  BasicType</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td><b>country_code</b></td>
+		<td>String</td>
+		<td>2</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>lang_code</b></td>
+		<td>String</td>
+		<td>2</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td><b>template_id</b></td>
+		<td>String</td>
+		<td>50</td>
+		<td>X</td>
+		<td>&nbsp;</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	<a name="EmailTemplatesEnum"></a>
+	<h3>EmailTemplatesEnum</h3>
+	
+	<p><i>Enum</i></p>
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Description</th>
+		</thead>
+
+	
+		<tr>
+			<td>USER_REG_EMAIL</td>
+			<td></td>
+		</tr>
+	
+		<tr>
+			<td>RESET_PASSWORD_EMAIL</td>
+			<td></td>
+		</tr>
+	
+	</table>
+	<hr/>
+
+	<a name="PassworkLinkExpiry"></a>
+	<h3>PassworkLinkExpiry</h3>
+	
+	<p><i>Enum</i></p>
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Description</th>
+		</thead>
+
+	
+		<tr>
+			<td>SECONDS</td>
+			<td></td>
+		</tr>
+	
+		<tr>
+			<td>MINUTES</td>
+			<td></td>
+		</tr>
+	
+		<tr>
+			<td>HOURS</td>
+			<td></td>
+		</tr>
+	
+		<tr>
+			<td>DAYS</td>
+			<td></td>
+		</tr>
+	
+	</table>
+	<hr/>
+
+	<a name="UserRegisteration"></a>
+	<h3>UserRegisteration</h3>
+	
+	<p><i> DTO</i></p>
+	
+
+
+
+	<p></p>
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Length</th>
+			<th>Mandatory</th>
+			<th>Changeable</th>
+			<th>Description</th>
+		</thead>
+
+	
+	
+	<tr>
+		<td>applicationUrl</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>changePasswordLinkExpiry</td>
+		<td>Integer</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>changePasswordUrlLink</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>emailAddress</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>emailSenderDetail</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>password</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>passwordLinkExpiry</td>
+		<td><a href="DomainModelDoc-emailtemplate.html#PassworkLinkExpiry">PassworkLinkExpiry</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userFirstName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userId</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+	
+	<tr>
+		<td>userLastName</td>
+		<td>String</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>X</td>
+		<td>
+		
+</td>
+	</tr>
+			
+
+
+	</table>
+	
+	<hr/>
+
+	</div>
+
+
+	</div>
+</body>
+</html>	
+

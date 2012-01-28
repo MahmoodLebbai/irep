@@ -1,0 +1,15 @@
+module generator.Workflow
+
+Workflow {
+	component = @workflow.Sculptorworkflow {
+		modelFile = "classpath:/model.btdesign"
+		// For org.eclipse.xtext.mwe.Reader:
+		// modelFile = "."
+
+		// Advice for
+		//    transformation, Xtend 'src/main/resources/generator/SpecialCases.ext'
+		transformationAdvice = "generator::SpecialCases"
+		//    templates, Xpand 'src/main/resources/generator/SpecialCases.xpt'
+		templateAdvice = "generator::SpecialCases"
+	}
+}

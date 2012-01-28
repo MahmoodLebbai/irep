@@ -1,0 +1,16 @@
+ApplicationPart CryptoPart {
+   
+   
+   Module crypto {
+		  basePackage=com.fos.common.crypto
+		  
+		   Service CryptoService {
+		   	
+			 String encrypt(String plainText)     throws CryptoException;
+		   	 String decrypt(String encryptedText) throws CryptoException;
+		   	 
+		   }
+	}
+
+
+}

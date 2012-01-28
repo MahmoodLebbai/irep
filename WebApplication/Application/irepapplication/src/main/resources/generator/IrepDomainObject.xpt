@@ -1,0 +1,30 @@
+« IMPORT sculptormetamodel »
+« EXTENSION extensions::helper »
+« EXTENSION extensions::properties »
+
+
+«DEFINE irepDataTrasnferObject FOR DataTransferObject»
+	«EXPAND dataTransferInterface»
+«ENDDEFINE»
+
+
+« DEFINE dataTransferInterface FOR DataTransferObject »
+	« FILE javaFileName(getDomainPackage() + ".testing." + name) TO_SRC »
+	
+	« javaHeader() »
+	
+	package «getDomainPackage()»;
+
+	    /**
+	     * Data Transfer Interface for «name». 
+	     */
+
+	
+	«ENDFILE»
+	
+«ENDDEFINE»
+
+
+
+
+

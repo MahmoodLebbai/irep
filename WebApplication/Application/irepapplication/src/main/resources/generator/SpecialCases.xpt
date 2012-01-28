@@ -1,0 +1,9 @@
+Ç IMPORT sculptormetamodel È
+Ç EXTENSION extensions::helper È
+Ç EXTENSION extensions::properties È
+Ç EXTENSION generator::IrepDomainObject È
+
+
+ÇAROUND templates::domain::DomainObject::dataTransferObjectHook FOR DataTransferObject È
+		ÇEXPAND generator::IrepDomainObject::irepDataTrasnferObject È
+ÇENDAROUNDÈ

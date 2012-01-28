@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Vaadin application controller -->
+    <bean id="applicationServlet" class="org.springframework.web.servlet.mvc.ServletWrappingController"
+          p:servletClass="com.fis.irep.irepclient.util.SpringApplicationServlet">
+        <property name="initParameters">
+            <props>
+                <prop key="application">com.fis.irep.irepclient.MainApplication</prop>
+                <prop key="productionMode">true</prop>
+                <prop key="widgetset">com.fis.irep.irepclient.view.AppWidgetSet</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Map URIs to web controllers -->
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" p:alwaysUseFullPath="true">
+        <property name="urlMap">
+            <map>
+                <entry key="/app" value-ref="applicationServlet"/>
+                <entry key="/app/**/*" value-ref="applicationServlet"/>
+                <entry key="/UIDL" value-ref="applicationServlet"/>
+                <entry key="/UIDL/**/*" value-ref="applicationServlet"/>
+                <entry key="/VAADIN/**/*" value-ref="applicationServlet"/>
+                <entry key="/mvc/login.do" value-ref="loginController"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean name="loginController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+        <property name="viewName" value="login"/>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+</beans>

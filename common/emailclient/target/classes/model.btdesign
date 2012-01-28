@@ -1,0 +1,5 @@
+Application MyApp {
+    basePackage=com.fos.service.common
+
+
+}

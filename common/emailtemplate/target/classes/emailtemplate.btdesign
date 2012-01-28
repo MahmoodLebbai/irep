@@ -1,0 +1,79 @@
+import 'classpath:/emailtemplate.btdesign'
+
+ApplicationPart EmailTemplate {
+	
+	
+	
+	Module emailtemplate {
+		
+		basePackage=com.fos.common.emailtemplate
+		
+		
+		
+		/* Template FTL Model Value Object for UserRegisteration */
+		DataTransferObject UserRegisteration {
+			String userFirstName
+			String userLastName
+			String emailAddress
+			String password
+			String userId
+			String applicationUrl
+			String changePasswordUrlLink
+			String emailSenderDetail
+			Integer changePasswordLinkExpiry
+			reference @PassworkLinkExpiry  passwordLinkExpiry
+			
+		}
+		
+		
+		enum PassworkLinkExpiry {
+			
+            SECONDS("Seconds"),
+            MINUTES("Minutes"),
+            HOURS("Hours"),
+            DAYS("Days")
+        }
+       
+       
+        
+        enum EmailTemplatesEnum {
+        	USER_REG_EMAIL("USER_REG_EMAIL"),
+        	RESET_PASSWORD_EMAIL("RESET_PASSWORD_EMAIL")	
+        } 
+		
+		
+		
+		
+		/* Email Template File to store Email Tempalte */
+		Entity EmailTemplate {
+			cache
+		    scaffold
+		    databaseTable="EMAIL_TEMPLATE"
+		    reference @EmailTemplateKey emailTemplateKey key
+		    String ftlFilePath databaseColumn="TEMPLATE_FILE_PATH" length="100"
+		    Boolean status databaseColumn="ACTIVE_FLAG"
+		    
+		    Repository EmailTemplateRepository {	
+				List<@EmailTemplate> getEmailTemplate(String countryCode, String languageCode , String templateId) throws EmailTemplateNotFoundException;				
+			}
+		} 
+		
+		/* Email Tempalte Key Attributes to reterive the tempalte file */
+        BasicType EmailTemplateKey {
+  			String country_code key databaseColumn="COUNTRY_CODE" length="2"
+  			String lang_code key databaseColumn="LANG_CODE" length="2"
+  			String template_id key databaseColumn="TEMPLATE_ID" length="50"
+		}
+		
+		
+		/* Email Tempalte Service */
+		Service EmailTemplateService {
+          	getEmailTemplate => EmailTemplateRepository.getEmailTemplate;
+          	String getEmailContent(String countryCode , String languageCode , @EmailTemplatesEnum emailTemplateType , Map<String,Object> dataModel) throws EmailTemplateException;
+          	
+        }
+		
+	}
+	
+
+}

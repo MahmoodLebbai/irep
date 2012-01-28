@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset> 
+  <APPLICATION/>  
+  <CATEGORY/>  
+  <CATEGORYDETAIL/>  
+  <CATEGORYDETAIL_PERMISSION/>  
+  <DEPARTMENT/>  
+  <MODULE/>  
+  <OPERATION/>  
+  <PERMISSION/>  
+  <ROLE/>  
+  <ROLE_PERMISSION/>  
+  <USERGROUP/>  
+  <USER/>  
+  <USER_CATEGORY/>  
+  <USERDELEGATION/>  
+  <USEREMAIL/>  
+  <USERGROUP_CATEGORY/>  
+  <USERGROUP_ROLE/>  
+  <USERPHONE/>  
+  <USER_ROLE/> 
+</dataset>
