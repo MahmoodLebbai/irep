@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fos.common.crypto.service.CryptoService;
+import com.fos.common.security.SecurityConstants;
 import com.fos.common.security.SecurityErrorCodes;
 import com.fos.common.security.domain.Applications;
 import com.fos.common.security.domain.Category;
@@ -1287,8 +1288,47 @@ public class SecurityServiceImpl extends SecurityServiceImplBase {
 	@Override
 	public UserDTO findUser(String userId, String password)
 			throws com.fos.common.security.exception.SecurityException {
-		// TODO Auto-generated method stub
-		return null;
+		
+		//Check For UserId or Password is Empty
+		if(userId == null || userId.trim().equals(SecurityConstants.EMPTY))
+			throw new SecurityException(SecurityErrorCodes.SEC_USERID_PASSWORD_EMPTY, "Unable to reterive the User Details. Reason = UserId or Password is Empty");
+		
+		// Password should be Plain Text and service will try to encrypt the password before it performs database look
+        String encryptedPassword = "";
+    	try
+    	{
+    		encryptedPassword = this.getCryptoService().encrypt(password);
+    		
+    		if(encryptedPassword.equals("") )
+    			throw new SecurityException(SecurityErrorCodes.SEC_CRYPTO_ERROR_ENCRYPT , "Unknown Error while Encrypting User Password" );		
+    		
+    	}
+    	catch(Exception ex)
+    	{
+    		throw new SecurityException(SecurityErrorCodes.SEC_CRYPTO_ERROR_ENCRYPT , "Error Encrypting User Password" + ".Error Message = " + ex.getMessage());
+    	}
+    	
+    	User user = null;
+    	
+    	try
+    	{
+    		user = this.getUserService().getUserDetails(userId, encryptedPassword);
+    	}
+    	
+    	catch(Exception ex)
+    	{
+    		throw new SecurityException(SecurityErrorCodes.SEC_USER_FIND_ERROR , "Error while reteriving user in to database" + ".Error Message = " + ex.getMessage());
+    	}
+    	
+    	UserDTO userDTO = this.getSecurityMapperFactory().getMapperFacade().map(user, UserDTO.class);
+    	
+    	if(userDTO == null)
+    		throw new SecurityException(SecurityErrorCodes.SEC_USER_MAPPER_ERROR , "Error while mapping User Domain Object to User DTO ");
+    	
+    	
+    	return userDTO;
+    	
+    	
 	}
 
 

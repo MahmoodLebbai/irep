@@ -49,5 +49,13 @@ public class SecurityErrorCodes {
 	/* SEC_USER_MAPPER_ERROR */
 	public final static int SEC_USER_MAPPER_ERROR = 10010;
 	
+	/* SEC_USERID_PASSWORD_EMPTY */
+	public final static int SEC_USERID_PASSWORD_EMPTY = 10011;
+	
+	/* SEC_USER_FIND_ERROR */
+	public final static int SEC_USER_FIND_ERROR = 10012;
+	
+	
+	
 
 }
